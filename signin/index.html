@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png">
     <title>X-course task</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,23 @@
 </head>
 <body>
     <header>
-        <h1>X-course task / Anastasiia Polishchuk</h1>
+        <p>X-course task / Anastasiia Polishchuk</p>
     </header>
 
 
     <main>
-        <div>
-            <img src="./image/avatar.png" width="" alt="Avatar">
-        </div>
+        <section>
+            <div class="user-box">
+                <img src="./images/avatar-5.png" width="180" alt="Avatar">
+                <form action="/" method="post">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="type Username">
+                    <button type="submit">Sign-in</button>
+                </form>
+            </div>
+        </section>
 
-        <form action="/" method="post">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="type Username">
-            <button type="submit">Sign-in</button>
-        </form>
+        
     </main>
 
 

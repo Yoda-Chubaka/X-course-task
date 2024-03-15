@@ -1,0 +1,51 @@
+
+
+
+header {
+    border: 1px solid grey;
+}
+
+section {
+    margin-top: 80px;
+}
+
+label {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid rgb(24, 23, 23);
+    outline: 0;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 28px;
+    color: rgb(27, 27, 27);
+}
+
+.user-box {
+    margin-top: 260px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
