@@ -140,13 +140,14 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: normal;
-    width: 380px;
+    width: 340px;
     height: 60px;
 }
 
 .sign-out-button {
     display: block;
     margin-top: 11px;
+    margin-left: -35px;
     padding: 2px 5px;
     font-size: 14px;
     border-radius: 8px;
@@ -171,7 +172,7 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 120px;
+    width: 100px;
 }
 
 .book-section {
