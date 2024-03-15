@@ -1,36 +1,73 @@
+/* html {
+    height: 100%;
+} */
 
+body {
+    font-family: Roboto, sans-serif;
+    /* margin: 0;
+    height: 100%;
+    display: grid; */
+}
 
 
 header {
     border: 1px solid grey;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 80px;
+    width: 100%;
 }
 
 section {
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 label {
     display: inline-block;
     width: 100%;
     text-align: center;
+    font-weight: 600;
 }
 
 input {
     width: 100%;
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin-top: 7px;
+    padding: 7px 13px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    outline: 0;
 }
 
 button {
     display: block;
     margin: 0 auto;
-    margin-top: 10px;
-    padding: 5px 10px;
+    margin-top: 15px;
+    padding: 7px 13px;
     font-size: 18px;
-    border-radius: 4px;
-    border: 1px solid rgb(24, 23, 23);
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
     outline: 0;
     width: 100%;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }
 
 img {
@@ -38,14 +75,40 @@ img {
     margin: 0 auto;
 }
 
-p {
-    font-size: 28px;
+.container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header-name {
+    font-size: 24px;
     color: rgb(27, 27, 27);
 }
 
 .user-box {
-    margin-top: 260px;
     width: 300px;
     height: 300px;
     margin: 0 auto;
+    /* border: 1px solid grey; */
+}
+
+.footer {
+    border: 1px solid grey;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+}
+
+.footer-box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    z-index: 1000;
+}
+
+.footer-name {
+    font-size: 18px;
 }
