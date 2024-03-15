@@ -22,7 +22,7 @@
             <a href="/">
                 <img src="./images/cart.webp" width="60" />
             </a>
-            <button class="sign-out-button" type="submit">Sing-out</button>
+            <button class="sign-out-button" type="submit">Sign-out</button>
             <div class="username-box">
                 <img src="./images/avatar-5.png" width="64"/>
                 <p>Username</p>
@@ -35,13 +35,34 @@
             <div class="main-box">
                 <div class="submain-box-left">
                     <div class="item-card">
-
+                        <img src="./images/book-template.jpg" width="200" alt="book">
                     </div>
-                    <div class="description-card">
-                    
+                    <ul class="description-card">
+                        <li class="li-book-name">
+                            Book name:
+                        </li>
+                        <li>
+                            Book author:
+                        </li>
+                        <li>
+                            Book level:
+                        </li>
+                    </ul>
+                    <h3>Book description</h3>
+                    <div class="description-box">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cum provident asperiores quis? Soluta quasi maiores,
+                            tenetur alias aut ea temporibus nihil dignissimos dolore laboriosam eos deserunt ratione maxime reiciendis?
+                        </p>
                     </div>
                 </div>
-                <div class="submain-box-right"></div>
+                <div class="submain-box-right">
+                    <p>Price, $</p>
+                    <label for="book-quantity">Count</label>
+                    <input class="book-quantity-input" type="number" id="book-quantity" name="book-quantity">
+                    <p>Total price</p>
+                    <button class="add-button" type="submit">Add to cart</button>
+                </div>
             </div>
         </section>
     </main>
