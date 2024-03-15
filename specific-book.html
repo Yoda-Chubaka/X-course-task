@@ -7,7 +7,8 @@
     <title>X-course task</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -15,24 +16,34 @@
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <header>
+    <header class="specific-book-header">
         <p class="header-name">X-course task / Anastasiia Polishchuk</p>
+        <div class="header-box">
+            <a href="/">
+                <img src="./images/cart.webp" width="60" />
+            </a>
+            <button class="sign-out-button" type="submit">Sing-out</button>
+            <div class="username-box">
+                <img src="./images/avatar-5.png" width="64"/>
+                <p>Username</p>
+            </div>
+        </div>
     </header>
 
+    <main>
+        <section class="book-section">
+            <div class="main-box">
+                <div class="submain-box-left">
+                    <div class="item-card">
 
-    <main class="container">
-        <section>
-            <div class="user-box">
-                <img src="./images/avatar-5.png" width="180" alt="Avatar">
-                <form action="/" method="post">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="type Username">
-                    <button class="sign-in-button" type="submit">Sign-in</button>
-                </form>
+                    </div>
+                    <div class="description-card">
+                    
+                    </div>
+                </div>
+                <div class="submain-box-right"></div>
             </div>
         </section>
-
-        
     </main>
 
     <footer class="footer">
@@ -40,5 +51,4 @@
             <p class="footer-name">Виконано в <a href="/">Prometheus</a></p>
         </div>
     </footer>
-</body>
 </html>
