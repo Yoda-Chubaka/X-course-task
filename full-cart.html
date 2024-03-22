@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
     <header class="specific-book-header">
         <p class="header-name">
@@ -38,52 +40,45 @@
         </div>
     </header>
 
-    <main>
-        <section class="book-section">
-            <div class="main-box">
-                <div class="submain-box-left">
-                    <div class="item-card">
-                        <img src="./images/book-template.jpg" width="200" alt="book">
-                    </div>
-                    <ul class="description-card">
-                        <li class="li-book-name item-one-book">
-                            Book name:
-                        </li>
-                        <li class="item-one-book">
-                            Book author:
-                        </li>
-                        <li class="item-one-book">
-                            Book level:
-                        </li>
-                        <li class="item-one-book">
-                            Book tags:
-                        </li>
+
+    <main class="container">
+        <section class="book-section cart-section">
+            <div class="box-full-cart-main">
+                <button class="active-purshase-button">
+                    <a class="link-purshase-active" href="/">Purshase</a>
+                </button>
+                <div class="box-full-cart">
+                    <ul class="full-item-cart">
+                        <li>Book name</li>
+                        <li>Count</li>
+                        <li>Total price</li>
                     </ul>
-                    <div class="description-box">
-                        <h3>Book description</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore quam ipsam doloremque voluptate voluptatibus nisi? Veritatis sequi numquam aliquam pariatur laboriosam reiciendis, quos voluptatum voluptas beatae dicta neque consequatur?
-                        </p>
-                    </div>
-                </div>
-                <div class="submain-box-right">
-                    <p>Price, $</p>
-                    <label for="book-quantity">Count</label>
-                    <input class="book-quantity-input" type="number" id="book-quantity" name="book-quantity">
-                    <p>Total price</p>
-                    <button class="add-button" type="submit">
-                        <a href="./full-cart.html">
-                            Add to cart
-                        </a>
-                    </button>
+                    <ul class="full-item-cart">
+                        <li>Book name</li>
+                        <li>Count</li>
+                        <li>Total price</li>
+                    </ul>
+                    <ul class="full-item-cart">
+                        <li>Book name</li>
+                        <li>Count</li>
+                        <li>Total price</li>
+                    </ul>
+                    <ul class="full-item-cart">
+                        <li>Book name</li>
+                        <li>Count</li>
+                        <li>Total price</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
+
 
     <footer class="footer">
         <div class="footer-box">
             <p class="footer-name">Виконано в <a href="/">Prometheus</a></p>
         </div>
     </footer>
+</body>
+
 </html>
