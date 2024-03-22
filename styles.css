@@ -114,6 +114,8 @@ img {
     width: 100%;
     margin-top: 7px;
     padding: 7px 13px;
+    color: grey;
+    font-size: 16px;
 }
 
 .footer {
@@ -209,13 +211,29 @@ img {
     border: 1px solid grey;
 }
 
+.description-card {
+    margin-left: 50px;
+}
+
 .description-box {
-    width: 350px;
+    width: 450px;
 }
 
 .li-book-name {
     font-weight: 600;
 }
+
+.item-one-book {
+    margin-bottom: 10px;
+}
+
+.item-one-book:last-child {
+    margin-bottom: 0;
+}
+
+/* .li-book-name:nth-child(-n+4) {
+    margin-bottom: 0;
+} */
 
 .submain-box-right {
     padding: 15px;
@@ -267,15 +285,19 @@ img {
 }
 
 .book-search {
-    padding: 5px 10px;
+    padding: 8px 10px;
     margin-right: 20px;
     width: 350px;
-    background: url(./images/glass-2.png) no-repeat scroll 300px 3px;
+    background: url(./images/glass-9.png) no-repeat scroll 310px 4px;
+    color: grey;
+    font-size: 16px;
 }
 
 .price-search {
-    padding: 5px 10px;
+    padding: 8px 10px;
     width: 250px;
+    color: grey;
+    font-size: 16px;
 }
 
 
