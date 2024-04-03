@@ -1,12 +1,12 @@
-/* html {
-    height: 100%;
-} */
 
 body {
     min-height: 100vh;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -15,9 +15,6 @@ main {
 
 body {
     font-family: Roboto, sans-serif;
-    /* margin: 0;
-    height: 100%;
-    display: grid; */
 }
 
 
@@ -231,10 +228,6 @@ img {
     margin-bottom: 0;
 }
 
-/* .li-book-name:nth-child(-n+4) {
-    margin-bottom: 0;
-} */
-
 .submain-box-right {
     padding: 15px;
     width: 300px;
@@ -276,21 +269,47 @@ img {
 
 
 /* LIST OF BOOKS */
+.book-section {
+    padding: 0 20px;
+}
+
+.main-book-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
 .list-book-section {
     margin-top: 60px;
+   
 }
 
 .books-list-form {
     margin-bottom: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .book-search {
     padding: 8px 10px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     width: 350px;
-    background: url(./images/glass-9.png) no-repeat scroll 310px 4px;
-    color: grey;
+    /* background: url(./images/glass-9.png) no-repeat scroll 310px 4px;
+    color: grey; */
     font-size: 16px;
+}
+
+.w3-padding {
+    
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 34%;
+    top: 25%;
+    color: grey;
 }
 
 .price-search {
@@ -317,18 +336,18 @@ img {
     color: grey;
 }
 
-
 .books-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     gap: 30px;
-
+    margin-bottom: 60px;
 }
 
 .one-book {
     border: 1px solid grey;
     /* margin-top: 20px; */
+    flex-grow: 40%;
 }
 
 .books-items {
@@ -343,10 +362,6 @@ img {
 
 .author {
     margin-bottom: 0;
-}
-
-.books-name {
-
 }
 
 .books-price {
