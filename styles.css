@@ -1,4 +1,5 @@
 
+
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -301,39 +302,60 @@ img {
 }
 
 .w3-padding {
-    
     position: relative;
 }
 
 .search-icon {
     position: absolute;
-    left: 34%;
+    left: 86%;
     top: 25%;
-    color: grey;
+    color: lightgrey;
 }
 
-.price-search {
-    padding: 6px 9px;
-    width: 250px;
+:root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: white;
+    --select-bg: rgba(255, 255, 255, 0.2);
+}
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    width: 200px;
+    padding: 9px 12px;
+    background: url(./images/arrow-icon.png) no-repeat right 0.8em center / 1.4em;    
     color: grey;
     border-radius: 8px;
-    outline: 0;
-}
+    border: 1px solid grey;
+    /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2); */
+    cursor: pointer;
 
-.contact-form-input-wrapper {
-    position: relative;
-}
+    /* Remove IE arrow */
+    /* &::-ms-expand {
+        display: none;
+    } */
 
-.price-icon {
-    position: absolute;
-    top: 50%;
-    right: 12px;
-    transform: translateY(-50%);
-    display: block;
-    width: 18px;
-    height: 18px;
-    fill: grey;
-    color: grey;
+    /* Remove focus outline */
+    &:focus {
+        outline: none;
+    }
+
+    /* <option> colors */
+    option {
+        color: white;
+        background-color: rgb(6, 207, 157);
+        border-radius: 8px;
+    }
+
+    /* option:hover, option:focus {
+        color: green;
+        background-color: red;
+    } */
 }
 
 .books-list {
