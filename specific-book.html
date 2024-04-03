@@ -68,8 +68,25 @@
                 </div>
                 <div class="submain-box-right">
                     <p>Price, $</p>
-                    <label for="book-quantity">Count</label>
-                    <input class="book-quantity-input" type="number" id="book-quantity" name="book-quantity">
+                    <div class="count">
+                        <div>
+                            <label for="book-quantity">Count</label>
+                        </div>
+                        <div>
+                            <button type="button" class="button-minus" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+                                -
+                            </button>
+                        
+                            <input class="book-quantity-input" type="number" name="number" id="book-quantity" name="book-quantity" min="0"
+                                max="100" value="0">
+                        
+                            <button type="button" class="button-plus" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+                                +
+                            </button>
+                    </div>
+                    </div>
+                    <!-- <label for="book-quantity">Count</label>
+                    <input class="book-quantity-input" type="number" id="book-quantity" name="book-quantity"> -->
                     <p>Total price</p>
                     <button class="add-button" type="submit">
                         <a href="./full-cart.html">
@@ -86,4 +103,6 @@
             <p class="footer-name">Виконано в <a href="/">Prometheus</a></p>
         </div>
     </footer>
+
+    
 </html>

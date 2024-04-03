@@ -234,13 +234,47 @@ img {
     width: 300px;
     height: 200px;
     border: 1px dashed grey;
+}
 
+.count {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-quantity-input::-webkit-outer-spin-button,
+.book-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .book-quantity-input {
-    width: 50px;
+    border-radius: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    /* width: 50px;
     margin-left: 160px;
-    padding: 2px 5px;
+    padding: 2px 5px; */
+}
+
+.button-minus {
+    height: 35px;
+    padding: 4px 10px;
+    border: 1px solid grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 16px;
+}
+
+.button-plus {
+    height: 35px;
+    padding: 4px 7px;
+    border: 1px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 16px;
 }
 
 .add-button {
@@ -307,16 +341,9 @@ img {
 
 .search-icon {
     position: absolute;
-    left: 86%;
-    top: 25%;
-    color: lightgrey;
-}
-
-:root {
-    --arrow-bg: rgba(255, 255, 255, 0.3);
-    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-    --option-bg: white;
-    --select-bg: rgba(255, 255, 255, 0.2);
+    left: 88%;
+    top: 32%;
+    color: rgb(6, 207, 157);
 }
 
 select {
@@ -328,11 +355,10 @@ select {
     /* Personalize */
     width: 200px;
     padding: 9px 12px;
-    background: url(./images/arrow-icon.png) no-repeat right 0.8em center / 1.4em;    
+    background: url(./images/arrow-icon-8.png) no-repeat right 0.8em center / 1.4em;    
     color: grey;
     border-radius: 8px;
     border: 1px solid grey;
-    /* box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2); */
     cursor: pointer;
 
     /* Remove IE arrow */
@@ -340,35 +366,26 @@ select {
         display: none;
     } */
 
-    /* Remove focus outline */
     &:focus {
         outline: none;
     }
 
-    /* <option> colors */
     option {
         color: white;
         background-color: rgb(6, 207, 157);
         border-radius: 8px;
     }
-
-    /* option:hover, option:focus {
-        color: green;
-        background-color: red;
-    } */
 }
 
 .books-list {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     gap: 30px;
     margin-bottom: 60px;
 }
 
 .one-book {
     border: 1px solid grey;
-    /* margin-top: 20px; */
     flex-grow: 40%;
 }
 
