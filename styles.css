@@ -47,6 +47,12 @@ input {
 li {
     list-style: none;
 }
+
+/* .container {
+    padding-left: 50px;
+    padding-right: 50px;
+} */
+
 .sign-in-button {
     display: block;
     margin: 0 auto;
@@ -184,12 +190,16 @@ img {
 
 .book-section {
     margin-top: 40px;
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .main-box {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    width: 100%;
+    width: 1300px;
     height: 400px;
     /* border: 1px solid grey; */
 }
@@ -230,15 +240,22 @@ img {
 }
 
 .submain-box-right {
-    padding: 15px;
+    padding: 20px;
     width: 300px;
-    height: 200px;
+    height: 250px;
     border: 1px dashed grey;
 }
 
+.submain-box-right p {
+    margin-bottom: 30px;
+}
 .count {
     display: flex;
     justify-content: space-between;
+}
+
+.main-count-button {
+    height: 35px;
 }
 
 .book-quantity-input::-webkit-outer-spin-button,
@@ -248,11 +265,10 @@ img {
 }
 
 .book-quantity-input {
-    
     border-radius: 0;
     margin-left: -5px;
     margin-right: -5px;
-    height: 35px;
+    height: 100%;
     font-size: 16px;
     text-align: center;
     /* line-height: 0; */
@@ -262,8 +278,7 @@ img {
 }
 
 .button-minus {
-    
-    height: 35px;
+    height: 100%;
     padding: 4px 10px;
     border: 1px solid grey;
     border-top-left-radius: 8px;
@@ -272,15 +287,29 @@ img {
     /* line-height: 0; */
 }
 
+.button-minus:hover,
+.button-minus:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+}
+
 .button-plus {
     
-    height: 35px;
+    height: 100%;
     padding: 4px 7px;
     border: 1px solid grey;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background-color: rgb(6, 207, 157);
     /* line-height: 0; */
+}
+
+.button-plus:hover,
+.button-plus:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
 }
 
 .add-button {
@@ -343,6 +372,7 @@ img {
 
 .w3-padding {
     position: relative;
+    margin-left: -15px;
 }
 
 .search-icon {
@@ -383,12 +413,24 @@ select {
     }
 }
 
+.box-book-list {
+    /* display: flex;
+    justify-content: space-around; */
+    
+}
+
 .books-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 60px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
+
+/* .book-list:nth-child(4n+4) {
+    margin-right: -10px;
+} */
 
 .one-book {
     border: 1px solid grey;
@@ -452,7 +494,7 @@ select {
 
 .inactive-purshase-button {
     display: block;
-    margin-left: 1200px;
+    margin-left: 1170px;
     /* margin-right: 50px; */
     margin-bottom: 60px;
     padding: 3px 5px;
@@ -495,7 +537,7 @@ select {
 
 .active-purshase-button {
     display: block;
-    margin-left: 1200px;
+    margin-left: 1170px;
     /* margin-right: 50px; */
     margin-bottom: 50px;
     padding: 3px 5px;
