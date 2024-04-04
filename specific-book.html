@@ -16,86 +16,96 @@
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <header class="specific-book-header">
-        <p class="header-name">
-            <a href="./list-of-books.html">X-course task / Anastasiia Polishchuk</a>
-        </p>
-        <div class="header-box">
-            <a href="./empty-card.html">
-                <img src="./images/cart.webp" width="60" />
-            </a>
-            <button class="sign-out-button" type="submit">
-                <a href="./index.html">Sign-out</a>
-            </button>
-            <div class="username-box">
-                <img src="./images/avatar-5.png" width="64" alt="icon" />
-                <p>
-                    <a href="./index.html">
-                        Username
-                    </a>
-                </p>
+    <header class="specific-book-header container">
+        <div class="box-container">
+            <p class="header-name">
+                <a href="./index.html">X-course task / Anastasiia Polishchuk</a>
+            </p>
+            <div class="header-box">
+                <a href="./empty-card.html">
+                    <img src="./images/cart.webp" width="60" />
+                </a>
+                <button class="sign-out-button" type="submit">
+                    <a href="./index.html">Sign-out</a>
+                </button>
+                <div class="username-box">
+                    <img src="./images/avatar-5.png" width="64" alt="icon" />
+                    <p>
+                        <a href="./index.html">
+                            Username
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="book-section">
-            <div class="main-box">
-                <div class="submain-box-left">
-                    <div class="item-card">
-                        <img src="./images/book-template.jpg" width="200" alt="book">
-                    </div>
-                    <ul class="description-card">
-                        <li class="li-book-name item-one-book">
-                            Book name:
-                        </li>
-                        <li class="item-one-book">
-                            Book author:
-                        </li>
-                        <li class="item-one-book">
-                            Book level:
-                        </li>
-                        <li class="item-one-book">
-                            Book tags:
-                        </li>
-                    </ul>
-                    <div class="description-box">
-                        <h3>Book description</h3>
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore quam ipsam doloremque voluptate voluptatibus nisi? Veritatis sequi numquam aliquam pariatur laboriosam reiciendis, quos voluptatum voluptas beatae dicta neque consequatur?
-                        </p>
-                    </div>
-                </div>
-                <div class="submain-box-right">
-                    <p>Price, $</p>
-                    <div class="count">
-                        <div class="main-count-button">
-                            <label for="book-quantity">Count</label>
+        
+            <section class="book-section container">
+                <div class="main-box">
+                    <div class="submain-box-left">
+                        <div class="item-card">
+                            <img src="./images/book-template.jpg" width="200" alt="book">
                         </div>
-                        <div>
-                            <button type="button" class="button-minus" onclick="this.parentNode.querySelector('[type=number]').stepDown();">
-                                -
-                            </button>
-                        
-                            <input class="book-quantity-input" type="number" name="number" id="book-quantity" name="book-quantity" min="0"
-                                max="100" value="0">
-                        
-                            <button type="button" class="button-plus" onclick="this.parentNode.querySelector('[type=number]').stepUp();">
-                                +
-                            </button>
+                        <ul class="description-card">
+                            <li class="li-book-name item-one-book">
+                                Book name:
+                            </li>
+                            <li class="item-one-book">
+                                Book author:
+                            </li>
+                            <li class="item-one-book">
+                                Book level:
+                            </li>
+                            <li class="item-one-book">
+                                Book tags:
+                            </li>
+                        </ul>
+                        <div class="description-box">
+                            <h3>Book description</h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore quam ipsam doloremque
+                                voluptate voluptatibus nisi? Veritatis sequi numquam aliquam pariatur laboriosam reiciendis, quos
+                                voluptatum voluptas beatae dicta neque consequatur?
+                            </p>
+                        </div>
                     </div>
+                    <div class="submain-box-right">
+                        <p>Price, $</p>
+                        <div class="count">
+                            <div class="main-count-button">
+                                <label for="book-quantity">Count</label>
+                            </div>
+                            <div>
+                                <button type="button" class="button-minus"
+                                    onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+                                    -
+                                </button>
+            
+                                <input class="book-quantity-input" type="number" name="number" id="book-quantity"
+                                    name="book-quantity" min="0" max="100" value="0">
+            
+                                <button type="button" class="button-plus"
+                                    onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <label for="book-quantity">Count</label>
+                                <input class="book-quantity-input" type="number" id="book-quantity" name="book-quantity"> -->
+                        <p>Total price</p>
+                        <div class="add-button-box">
+                            <button class="add-button" type="submit">
+                                <a href="./full-cart.html">
+                                    Add to cart
+                                </a>
+                            </button>
+                        </div>
                     </div>
-                    <!-- <label for="book-quantity">Count</label>
-                    <input class="book-quantity-input" type="number" id="book-quantity" name="book-quantity"> -->
-                    <p>Total price</p>
-                    <button class="add-button" type="submit">
-                        <a href="./full-cart.html">
-                            Add to cart
-                        </a>
-                    </button>
                 </div>
-            </div>
-        </section>
+            </section>
+    
     </main>
 
     <footer class="footer">
