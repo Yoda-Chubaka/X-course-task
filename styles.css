@@ -453,9 +453,23 @@ select {
 
     option {
         color: white;
-        background-color: rgb(6, 207, 157);
+        /* background-color: rgb(139, 141, 141); */
         border-radius: 8px;
     }
+}
+
+.option-price {
+    background-color: rgb(136, 132, 132);
+}
+
+.option-choice-1 {
+    background-color: rgb(121, 119, 119);
+}
+
+
+
+.option-choice-2 {
+    background-color: rgb(136, 132, 132);
 }
 
 .box-book-list {
