@@ -46,6 +46,10 @@ ul {
     align-items: center;
 }
 
+.user-flex p {
+    font-size: 16px;
+}
+
 
 
 .section-vertical-align {
