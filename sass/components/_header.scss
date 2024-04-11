@@ -1,0 +1,85 @@
+header {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 80px;
+    width: 100%;
+}
+
+.specific-book-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-name {
+    font-size: 24px;
+    color: rgb(27, 27, 27);
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: normal;
+    width: 340px;
+    height: 60px;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.sign-out-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 2.40;
+    margin-top: 11px;
+    margin-left: -35px;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
+    outline: 0;
+    width: 90px;
+    height: 40px;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sign-out-button:hover,
+.sign-out-button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+}
+
+.username-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100px;
+}
+
+.user-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-flex p {
+    font-size: 16px;
+}
+

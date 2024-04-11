@@ -1,90 +1,37 @@
 
 
-body {
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    font-family: Roboto, sans-serif;
-    margin: 0;
-    padding: 0;
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user-box {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
 }
 
-main {
-    flex: 1 1 auto;
-}
-
-header {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    padding-left: 40px;
-    padding-right: 40px;
-    min-height: 80px;
+.label-username  {
+    display: inline-block;
     width: 100%;
+    text-align: center;
+    font-weight: 600;
 }
 
-ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-.invert {
-    filter: invert(1);
-}
-
-.invert-2 {
-    filter: invert(0.5);
-}
-
-.user-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.user-flex p {
+.username-input {
+    width: 100%;
+    margin-top: 7px;
+    padding: 7px 13px;
+    color: grey;
     font-size: 16px;
-}
-
-
-
-.section-vertical-align {
-    /* margin-top: 90px; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-input {
-    border-radius: 8px;
-    border: 1px solid grey;
-    outline: 0;
-}
-
-li {
-    list-style: none;
-}
-
-.container {
-    padding-left: 60px;
-    padding-right: 60px;
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* width: 100%; */
-}
-
-.box-container {
-    width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .sign-in-button {
@@ -111,46 +58,6 @@ li {
     border: 1px solid rgb(2, 70, 53);
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-a:visited {
-    color: inherit;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
-}
-
-.header-name {
-    font-size: 24px;
-    color: rgb(27, 27, 27);
-}
-
-.user-box {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-}
-
-.label-username  {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-weight: 600;
-}
-
-.username-input {
-    width: 100%;
-    margin-top: 7px;
-    padding: 7px 13px;
-    color: grey;
-    font-size: 16px;
-}
-
 .footer {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -173,53 +80,7 @@ img {
 }
 
 /* SPECIFIC BOOK */
-.specific-book-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.header-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: normal;
-    width: 340px;
-    height: 60px;
-}
-
-.sign-out-button {
-    display: inline-block;
-    text-align: center;
-    line-height: 2.40;
-    margin-top: 11px;
-    margin-left: -35px;
-    padding: 2px 5px;
-    font-size: 14px;
-    border-radius: 8px;
-    border: 1px solid rgb(6, 207, 157);
-    outline: 0;
-    width: 90px;
-    height: 40px;
-    color: black;
-    background-color: rgb(6, 207, 157);
-    font-weight: 600;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.sign-out-button:hover,
-.sign-out-button:focus {
-    cursor: pointer;
-    color: white;
-    background-color: rgb(2, 70, 53);
-    border: 1px solid rgb(2, 70, 53);
-}
-
-.username-box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100px;
-}
 
 .book-section {
     /* margin-top: 40px; */
@@ -645,6 +506,12 @@ select {
     font-weight: 600;
     color: grey;
 }
+
+.invert-2 {
+    filter: invert(0.5);
+}
+
+/* ACTIVE CART */
 
 .active-purshase-button {
     display: inline-block;
