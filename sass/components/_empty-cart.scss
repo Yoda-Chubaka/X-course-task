@@ -1,0 +1,56 @@
+.empty-box {
+    display: block;
+    margin: auto 0;
+}
+
+.inactive-purshase-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5;
+    margin-left: 1160px;
+    margin-bottom: 60px;
+    padding: 3px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid grey;
+    outline: 0;
+    width: 100px;
+    height: 30px;
+    color: black;
+    background-color: grey;
+    font-weight: 600;
+    cursor: default;
+}
+
+.inactive-purshase-button:hover,
+.inactive-purshase-button:focus {
+    cursor: default;
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+.link-purshase {
+    cursor: default;
+}
+
+.link-purshase:hover,
+.link-purshase:focus {
+    cursor: default;
+    background-color: grey;
+    border: 1px solid grey;
+}
+
+.invert-2 {
+    filter: invert(0.5);
+}
+
+.paragraph-empty-cart {
+    text-align: center;
+    font-weight: 600;
+}
+
+.paragraph-empty-cart-grey {
+    text-align: center;
+    font-weight: 600;
+    color: grey;
+}
