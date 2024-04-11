@@ -1,0 +1,44 @@
+.user-box {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.label-username {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.username-input {
+    width: 100%;
+    margin-top: 7px;
+    padding: 7px 13px;
+    color: grey;
+    font-size: 16px;
+}
+
+.sign-in-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 7px 13px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
+    outline: 0;
+    width: 100%;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sign-in-button:hover,
+.sign-in-button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+}

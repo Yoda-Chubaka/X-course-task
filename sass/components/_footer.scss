@@ -1,0 +1,20 @@
+.footer {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer-box {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+}
+
+.footer-name {
+    font-size: 18px;
+}
