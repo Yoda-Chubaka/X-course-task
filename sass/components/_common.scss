@@ -74,6 +74,20 @@ img {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
 
-    
+// 768px +
+@media screen and (min-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+// 768px +
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }
