@@ -1,3 +1,13 @@
+.section-vertical-align-box {
+    position: absolute;
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
 .user-box {
     width: 300px;
     height: 300px;
