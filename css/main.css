@@ -707,158 +707,291 @@ img {
     pointer-events: none;
   }
 }
-.book-section-list {
-  width: 100%;
+@media screen and (min-width: 320px) {
+  .book-section-list {
+    width: 100%;
+  }
+  .main-book-list {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .books-list-form {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .w3-large {
+    position: relative;
+  }
+  .box-search {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .book-search {
+    padding: 8px 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  #book-search.book-search {
+    width: 100%;
+  }
+  .search-icon {
+    position: absolute;
+    color: rgb(6, 207, 157);
+  }
+  i.fa.fa-search.search-icon {
+    left: 87%;
+    top: 32%;
+  }
+  .select-mobile {
+    width: 100%;
+  }
+  select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 100%;
+    padding: 9px 12px;
+    background: url(../images/arrow-icon-8.png) no-repeat right 0.8em center/1.4em;
+    color: grey;
+    border-radius: 8px;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+  select:focus {
+    outline: none;
+  }
+  select option {
+    color: white;
+    border-radius: 8px;
+  }
+  .option-price {
+    background-color: rgb(136, 132, 132);
+  }
+  .option-choice-1 {
+    background-color: rgb(121, 119, 119);
+  }
+  .option-choice-2 {
+    background-color: rgb(136, 132, 132);
+  }
+  .books-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+  .one-book {
+    border: 1px solid grey;
+    width: 220px;
+  }
+  .books-items {
+    width: 220px;
+    height: 195px;
+    padding: 15px;
+  }
+  .header-name-box {
+    margin-top: 0;
+  }
+  .author {
+    margin-bottom: 0;
+  }
+  .books-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 220px;
+    height: 95px;
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .link-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.67;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
+    outline: 0;
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-button:hover,
+  .link-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+  }
 }
-
-.main-book-list {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+@media screnn and (min-width: 1024px) {
+  .book-section-list {
+    width: 100%;
+  }
+  .main-book-list {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .books-list-form {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .w3-padding {
+    position: relative;
+    margin-left: -15px;
+  }
+  .book-search {
+    padding: 8px 10px;
+    width: 350px;
+    font-size: 16px;
+  }
+  .search-icon {
+    position: absolute;
+    left: 88%;
+    top: 32%;
+    color: rgb(6, 207, 157);
+  }
+  select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 200px;
+    padding: 9px 12px;
+    background: url(../images/arrow-icon-8.png) no-repeat right 0.8em center/1.4em;
+    color: grey;
+    border-radius: 8px;
+    border: 1px solid grey;
+    cursor: pointer;
+  }
+  select:focus {
+    outline: none;
+  }
+  select option {
+    color: white;
+    border-radius: 8px;
+  }
+  .option-price {
+    background-color: rgb(136, 132, 132);
+  }
+  .option-choice-1 {
+    background-color: rgb(121, 119, 119);
+  }
+  .option-choice-2 {
+    background-color: rgb(136, 132, 132);
+  }
+  .books-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 60px;
+  }
+  .one-book {
+    border: 1px solid grey;
+    width: 220px;
+  }
+  .books-items {
+    width: 220px;
+    height: 195px;
+    padding: 15px;
+  }
+  .header-name-box {
+    margin-top: 0;
+  }
+  .author {
+    margin-bottom: 0;
+  }
+  .books-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 220px;
+    height: 95px;
+    padding: 15px;
+    padding-top: 30px;
+  }
+  .link-button {
+    display: inline-block;
+    text-align: center;
+    line-height: 1.67;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
+    outline: 0;
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link-button:hover,
+  .link-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+  }
 }
-
-.books-list-form {
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.w3-padding {
-  position: relative;
-  margin-left: -15px;
-}
-
-.book-search {
-  padding: 8px 10px;
-  width: 350px;
-  font-size: 16px;
-}
-
-.search-icon {
-  position: absolute;
-  left: 88%;
-  top: 32%;
-  color: rgb(6, 207, 157);
-}
-
-select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 0;
-  outline: 0;
-  font: inherit;
-  width: 200px;
-  padding: 9px 12px;
-  background: url(../images/arrow-icon-8.png) no-repeat right 0.8em center/1.4em;
-  color: grey;
-  border-radius: 8px;
-  border: 1px solid grey;
-  cursor: pointer;
-}
-select:focus {
-  outline: none;
-}
-select option {
-  color: white;
-  border-radius: 8px;
-}
-
-.option-price {
-  background-color: rgb(136, 132, 132);
-}
-
-.option-choice-1 {
-  background-color: rgb(121, 119, 119);
-}
-
-.option-choice-2 {
-  background-color: rgb(136, 132, 132);
-}
-
-.books-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 25px;
-  margin-bottom: 60px;
-}
-
-.one-book {
-  border: 1px solid grey;
-  width: 220px;
-}
-
-.books-items {
-  width: 220px;
-  height: 195px;
-  padding: 15px;
-}
-
-.header-name-box {
-  margin-top: 0;
-}
-
-.author {
-  margin-bottom: 0;
-}
-
-.books-price {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  width: 220px;
-  height: 95px;
-  padding: 15px;
-  padding-top: 30px;
-}
-
-.link-button {
-  display: inline-block;
-  text-align: center;
-  line-height: 1.67;
-  padding: 2px 5px;
-  font-size: 14px;
-  border-radius: 8px;
-  border: 1px solid rgb(6, 207, 157);
-  outline: 0;
-  width: 80px;
-  height: 30px;
-  color: black;
-  background-color: rgb(6, 207, 157);
-  font-weight: 600;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-button:hover,
-.link-button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: rgb(2, 70, 53);
-  border: 1px solid rgb(2, 70, 53);
-}
-
 .book-section {
   max-width: 1300px;
   position: absolute;
