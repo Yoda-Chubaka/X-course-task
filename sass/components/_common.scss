@@ -76,16 +76,16 @@ img {
     }
 }
 
-// 768px +
-@media screen and (min-width: 768px) {
+// 480px +
+@media screen and (min-width: 480px) {
     .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
 // 768px +
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .container {
         padding-left: 35px;
         padding-right: 35px;
