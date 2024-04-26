@@ -1,17 +1,24 @@
-.section-vertical-align-box {
+// 320px +
+@media screen and (min-width: 320px) {
+    .section-vertical-align-box {
     position: absolute;
-        width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    width: 275px;
+    padding-left: 25px;
+    padding-right: 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .user-box {
-    width: 300px;
+    width: 275px;
     height: 300px;
     margin: 0 auto;
+    margin-top: 15px;
+}
+
+.user-box img {
+    width: 130px;
 }
 
 .label-username {
@@ -24,17 +31,18 @@
 .username-input {
     width: 100%;
     margin-top: 7px;
-    padding: 7px 13px;
+    padding: 7px 8px;
     color: grey;
-    font-size: 16px;
+    font-size: 14px;
+    border-radius: 8px;
 }
 
 .sign-in-button {
     display: block;
     margin: 0 auto;
     margin-top: 15px;
-    padding: 7px 13px;
-    font-size: 18px;
+    padding: 7px 8px;
+    font-size: 14px;
     border-radius: 8px;
     border: 1px solid rgb(6, 207, 157);
     outline: 0;
@@ -51,4 +59,144 @@
     color: white;
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
+}
+}
+
+
+
+
+// 480px +
+@media screen and (min-width: 480px) {
+    .section-vertical-align-box {
+        width: 400px;
+    }
+}
+
+
+
+
+// 768px +
+@media screen and (min-width: 768px) {
+    .section-vertical-align-box {
+        position: absolute;
+        width: 700px;
+        padding-left: 25px;
+        padding-right: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .user-box {
+        width: 275px;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+
+    .user-box img {
+        width: 150px;
+    }
+
+    .label-username {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .username-input {
+        width: 100%;
+        margin-top: 7px;
+        padding: 7px 13px;
+        color: grey;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .sign-in-button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 7px 13px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid rgb(6, 207, 157);
+        outline: 0;
+        width: 100%;
+        color: black;
+        background-color: rgb(6, 207, 157);
+        font-weight: 600;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .sign-in-button:hover,
+    .sign-in-button:focus {
+        cursor: pointer;
+        color: white;
+        background-color: rgb(2, 70, 53);
+        border: 1px solid rgb(2, 70, 53);
+    }
+}
+
+
+
+
+
+// 1024px +
+@media screen and (min-width: 1024px) {
+    .section-vertical-align-box {
+            position: absolute;
+            width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .user-box {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    
+        .label-username {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+        }
+    
+        .username-input {
+            width: 100%;
+            margin-top: 7px;
+            padding: 7px 13px;
+            color: grey;
+            font-size: 16px;
+        }
+    
+        .sign-in-button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+            padding: 7px 13px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: 1px solid rgb(6, 207, 157);
+            outline: 0;
+            width: 100%;
+            color: black;
+            background-color: rgb(6, 207, 157);
+            font-weight: 600;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .sign-in-button:hover,
+        .sign-in-button:focus {
+            cursor: pointer;
+            color: white;
+            background-color: rgb(2, 70, 53);
+            border: 1px solid rgb(2, 70, 53);
+        }
 }
