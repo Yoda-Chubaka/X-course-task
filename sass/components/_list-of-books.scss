@@ -35,6 +35,7 @@
         padding: 8px 10px;
         width: 100%;
         font-size: 16px;
+        color: rgb(31, 30, 30);
     }
 
     #book-search.book-search {
@@ -194,6 +195,7 @@
         padding: 8px 10px;
         width: 100%;
         font-size: 16px;
+        color: rgb(31, 30, 30);
     }
 
     #book-search.book-search {
@@ -361,6 +363,7 @@
         padding: 8px 10px;
         width: 350px;
         font-size: 16px;
+        color: rgb(31, 30, 30);
     }
 
     #book-search.book-search {
@@ -524,13 +527,19 @@
         padding: 8px 10px;
         width: 350px;
         font-size: 16px;
+        color: rgb(31, 30, 30);
     }
 
     .search-icon {
         position: absolute;
-        left: 88%;
-        top: 32%;
+        // left: 88%;
+        // top: 32%;
         color: rgb(6, 207, 157);
+    }
+
+    i.fa.fa-search.search-icon {
+        left: 91%;
+        top: 25%;
     }
 
     select {
