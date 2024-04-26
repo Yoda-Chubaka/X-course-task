@@ -100,12 +100,15 @@
                         </div>
                     </div>
                     <div class="submain-box-right">
-                        <p>Price, $</p>
+                        <div class="price">
+                            <p>Price, $</p>
+                            <p>0</p>
+                        </div>
                         <div class="count">
                             <div class="main-count-button">
                                 <label for="book-quantity">Count</label>
                             </div>
-                            <div>
+                            <div class="count-button-box">
                                 <button type="button" class="button-minus"
                                     onclick="this.parentNode.querySelector('[type=number]').stepDown();">
                                     -
@@ -120,7 +123,10 @@
                                 </button>
                             </div>
                         </div>
-                        <p>Total price</p>
+                        <div class="total-price-specific">
+                            <p>Total price</p>
+                            <p>0</p>
+                        </div>
                         <div class="add-button-box">
                             <a href="./full-cart.html" class="add-button">Add to cart</a>    
                         </div>

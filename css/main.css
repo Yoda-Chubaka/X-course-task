@@ -1424,7 +1424,8 @@ img {
 @media screen and (min-width: 320px) {
   .section-vertical-align-specific {
     width: 280px;
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .book-section {
     width: 280px;
@@ -1458,8 +1459,8 @@ img {
             align-items: flex-start;
     width: 280px;
     border: 1px dashed grey;
+    border-bottom: 0;
     padding: 15px;
-    margin-bottom: 20px;
   }
   .item-card {
     width: 280px;
@@ -1483,6 +1484,7 @@ img {
   }
   .description-box {
     width: 280px;
+    margin-top: 15px;
   }
   .description-box h3 {
     font-size: 14px;
@@ -1494,10 +1496,21 @@ img {
     padding: 20px;
     width: 280px;
     border: 1px dashed grey;
-    margin-bottom: 20px;
+    border-top: 0;
   }
   .submain-box-right p {
     margin-bottom: 30px;
+  }
+  .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .count {
     display: -webkit-box;
@@ -1506,6 +1519,9 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .main-count-button {
     height: 35px;
@@ -1515,6 +1531,234 @@ img {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
+  }
+  .count-button-box {
+    height: 35px;
+  }
+  .button-minus {
+    height: 100%;
+    padding: 4px 10px;
+    border: 1px solid grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgb(6, 207, 157);
+    line-height: normal;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-minus:hover,
+  .button-minus:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+  }
+  .book-quantity-input::-webkit-outer-spin-button,
+  .book-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .book-quantity-input {
+    border-radius: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 100%;
+    font-size: 16px;
+    width: 40px;
+    text-align: center;
+    line-height: normal;
+  }
+  :focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  :focus::-moz-placeholder {
+    color: transparent;
+  }
+  :focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  :focus::-ms-input-placeholder {
+    color: transparent;
+  }
+  :focus::placeholder {
+    color: transparent;
+  }
+  .button-plus {
+    height: 100%;
+    padding: 4px 7px;
+    border: 1px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(6, 207, 157);
+    line-height: normal;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-plus:hover,
+  .button-plus:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+  }
+  .total-price-specific {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 50px;
+  }
+  .add-button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .add-button {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 15px;
+    line-height: 2.4;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
+    outline: 0;
+    width: 90px;
+    height: 40px;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .add-button:hover,
+  .add-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-vertical-align-specific {
+    width: 4200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .book-section {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 420px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .submain-box-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 420px;
+    border: 1px dashed grey;
+    border-bottom: 0;
+    padding: 15px;
+  }
+  .item-card {
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: rgb(179, 178, 178);
+  }
+  .item-card img {
+    border: 1px solid rgb(179, 178, 178);
+  }
+  .li-book-name {
+    font-weight: 600;
+  }
+  .item-one-book {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .item-one-book:last-child {
+    margin-bottom: 0;
+  }
+  .description-box {
+    width: 420px;
+    margin-top: 15px;
+  }
+  .description-box h3 {
+    font-size: 15px;
+  }
+  .description-box p {
+    font-size: 15px;
+  }
+  .submain-box-right {
+    padding: 20px;
+    width: 420px;
+    border: 1px dashed grey;
+    border-top: 0;
+  }
+  .submain-box-right p {
+    margin-bottom: 30px;
+  }
+  .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .main-count-button {
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .count-button-box {
+    height: 35px;
   }
   .button-minus {
     height: 100%;
@@ -1615,37 +1859,27 @@ img {
     border: 1px solid rgb(2, 70, 53);
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .section-vertical-align-specific {
-    position: absolute;
-    width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    width: 690px;
   }
   .book-section {
-    max-width: 1300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    max-width: 690px;
   }
   .main-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    max-width: 1300px;
-    height: 400px;
+    width: 690px;
+    height: 600px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1658,17 +1892,212 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    width: 385px;
+    height: 580px;
+    border: 1px dashed grey;
+    padding: 15px;
+    margin-right: 2rem;
+  }
+  .item-card {
+    width: 300px;
+    border: 1px solid grey;
+  }
+  .li-book-name {
+    font-weight: 600;
+  }
+  .item-one-book {
+    margin-bottom: 10px;
+  }
+  .item-one-book:last-child {
+    margin-bottom: 0;
+  }
+  .description-box {
+    width: 100%;
+    margin-top: 0;
+  }
+  .submain-box-right {
+    padding: 20px;
+    width: 300px;
+    height: 260px;
+    border: 1px dashed grey;
+  }
+  .submain-box-right p {
+    margin-bottom: 30px;
+  }
+  .count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main-count-button {
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .button-minus {
+    height: 100%;
+    padding: 4px 10px;
+    border: 1px solid grey;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: rgb(6, 207, 157);
+    line-height: normal;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-minus:hover,
+  .button-minus:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+  }
+  .book-quantity-input::-webkit-outer-spin-button,
+  .book-quantity-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .book-quantity-input {
+    border-radius: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    height: 100%;
+    font-size: 16px;
+    width: 40px;
+    text-align: center;
+    line-height: normal;
+  }
+  :focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+  :focus::-moz-placeholder {
+    color: transparent;
+  }
+  :focus:-ms-input-placeholder {
+    color: transparent;
+  }
+  :focus::-ms-input-placeholder {
+    color: transparent;
+  }
+  :focus::placeholder {
+    color: transparent;
+  }
+  .button-plus {
+    height: 100%;
+    padding: 4px 7px;
+    border: 1px solid grey;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgb(6, 207, 157);
+    line-height: normal;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .button-plus:hover,
+  .button-plus:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+  }
+  .add-button-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .add-button {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 2.4;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(6, 207, 157);
+    outline: 0;
+    width: 90px;
+    height: 40px;
+    color: black;
+    background-color: rgb(6, 207, 157);
+    font-weight: 600;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .add-button:hover,
+  .add-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(2, 70, 53);
+    border: 1px solid rgb(2, 70, 53);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-vertical-align-specific {
+    position: absolute;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .book-section {
+    max-width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .main-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 900px;
+    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 80px;
+  }
+  .submain-box-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     width: 600px;
     height: 400px;
     border: 1px dashed grey;
     padding: 15px;
-    margin-right: 15rem;
+    margin-right: 10rem;
   }
   .item-card {
     border: 1px solid grey;
   }
   .description-card {
+    width: 400px;
     margin-left: 50px;
+    margin-right: 30px;
   }
   .li-book-name {
     font-weight: 600;
@@ -1684,7 +2113,7 @@ img {
   }
   .submain-box-right {
     padding: 20px;
-    width: 400px;
+    width: 300px;
     height: 260px;
     border: 1px dashed grey;
   }
