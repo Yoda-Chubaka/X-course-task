@@ -2054,7 +2054,7 @@ img {
 @media screen and (min-width: 1024px) {
   .section-vertical-align-specific {
     position: absolute;
-    width: 900px;
+    width: 950px;
     margin-left: auto;
     margin-right: auto;
     top: 50%;
@@ -2063,7 +2063,7 @@ img {
             transform: translate(-50%, -50%);
   }
   .book-section {
-    max-width: 900px;
+    max-width: 950px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2082,10 +2082,8 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 900px;
+    max-width: 950px;
     height: 400px;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 80px;
   }
   .submain-box-left {
@@ -2104,6 +2102,7 @@ img {
     height: 400px;
     border: 1px dashed grey;
     padding: 15px;
+    margin-right: 0;
   }
   .submain-box-left-image {
     display: -webkit-box;
@@ -2114,7 +2113,7 @@ img {
             justify-content: start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    width: 100%;
+    width: 400px;
   }
   .item-card {
     width: 200px;
@@ -2125,8 +2124,11 @@ img {
     border: 1px solid grey;
     margin-bottom: 0;
   }
+  .submain-box-left-description {
+    width: 100%;
+  }
   .description-card {
-    width: 200px;
+    width: 150px;
     margin-left: 30px;
   }
   .li-book-name {
