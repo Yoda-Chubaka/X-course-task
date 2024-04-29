@@ -117,16 +117,16 @@
                                 <label for="book-quantity">Count</label>
                             </div>
                             <div class="count-button-box">
-                                <button type="button" class="button-minus"
-                                    onclick="this.parentNode.querySelector('[type=number]').stepDown();">
+                                <button id="minus" type="button" class="button-minus"
+                                    onclick="buttonMinus(this.parentNode)">
                                     -
                                 </button>
             
                                 <input class="book-quantity-input" type="number" name="number" id="book-quantity"
-                                    name="book-quantity" min="1" max="42" value="" placeholder="0">
+                                    name="book-quantity" min="1" max="42" value="1">
             
-                                <button type="button" class="button-plus"
-                                    onclick="this.parentNode.querySelector('[type=number]').stepUp();">
+                                <button id="plus" type="button" class="button-plus"
+                                    onclick="buttonPlus(this.parentNode)">
                                     +
                                 </button>
                             </div>
@@ -153,6 +153,6 @@
     </footer>
 
 
-    <script src="./js/menu.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
