@@ -1,3 +1,4 @@
+// MOBILE MENU
 (() => {
   const refs = {
     openMenuBtn: document.querySelector("[data-menu-open]"),
@@ -15,20 +16,30 @@
 
 
 
-
-
-var minus = document.getElementById('minus');
-var plus = document.getElementById('plus');
+// BUTTON MINUS
 var value = document.getElementById('book-quantity');
+var price = 100;
+var value1 = document.getElementById('total-price');
+
 
 function buttonMinus() {
-  // console.log("kjh");
   value.stepDown();
+  var value2 = price *value.value-(price-100);
+  console.log(value2);
+  value1.innerHTML = value2;
 }
 
-
+// BUTTON PLUS
 function buttonPlus() {
-  // console.log("kjh");
   value.stepUp();
+  var value2 = price *value.value;
+  console.log(value2);
+  value1.innerHTML = value2;
 }
+
+// // TOTAP PRICE
+// function totalPrice() {
+//   console.log("jhgfdf")
+//   value1.stepUp()
+// }
 
