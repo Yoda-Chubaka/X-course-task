@@ -1423,12 +1423,12 @@ img {
 }
 @media screen and (min-width: 320px) {
   .section-vertical-align-specific {
-    width: 280px;
+    max-width: 280px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
   .book-section {
-    width: 280px;
+    max-width: 280px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1444,7 +1444,7 @@ img {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 280px;
+    max-width: 280px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1457,13 +1457,13 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 280px;
+    max-width: 280px;
     border: 1px dashed grey;
     border-bottom: 0;
     padding: 15px;
   }
   .item-card {
-    width: 280px;
+    width: 248px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -1497,6 +1497,9 @@ img {
     width: 280px;
     border: 1px dashed grey;
     border-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .submain-box-right p {
     margin-bottom: 30px;
@@ -1511,6 +1514,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .price p {
+    margin-bottom: 15px;
   }
   .count {
     display: -webkit-box;
@@ -1648,12 +1654,12 @@ img {
 }
 @media screen and (min-width: 480px) {
   .section-vertical-align-specific {
-    width: 4200px;
+    max-width: 420px;
     margin-top: 40px;
     margin-bottom: 40px;
   }
   .book-section {
-    width: 420px;
+    max-width: 420px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1669,7 +1675,7 @@ img {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 420px;
+    max-width: 420px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1682,13 +1688,13 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 420px;
+    max-width: 420px;
     border: 1px dashed grey;
     border-bottom: 0;
     padding: 15px;
   }
   .item-card {
-    width: 420px;
+    width: 390px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -1736,6 +1742,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .price p {
+    margin-bottom: 15px;
   }
   .count {
     display: -webkit-box;
@@ -1861,7 +1870,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .section-vertical-align-specific {
-    width: 690px;
+    max-width: 690px;
   }
   .book-section {
     max-width: 690px;
@@ -1878,7 +1887,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 690px;
+    max-width: 690px;
     height: 600px;
     margin-right: auto;
     margin-left: auto;
@@ -1892,14 +1901,17 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 385px;
+    width: 400px;
     height: 580px;
     border: 1px dashed grey;
     padding: 15px;
     margin-right: 2rem;
   }
+  .submain-box-left-image {
+    width: 400px;
+  }
   .item-card {
-    width: 300px;
+    width: 368px;
     border: 1px solid grey;
   }
   .li-book-name {
@@ -1917,12 +1929,12 @@ img {
   }
   .submain-box-right {
     padding: 20px;
-    width: 300px;
+    width: 250px;
     height: 260px;
     border: 1px dashed grey;
   }
   .submain-box-right p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .count {
     display: -webkit-box;
@@ -2147,7 +2159,7 @@ img {
     border: 1px dashed grey;
   }
   .submain-box-right p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .count {
     display: -webkit-box;
