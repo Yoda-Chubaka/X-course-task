@@ -24,7 +24,7 @@ var value1 = document.getElementById('total-price');
 
 function buttonMinus() {
   value.stepDown();
-  var value3 = price * value.value-price;
+  var value3 = price * value.value;
   console.log("MINUS BUTTON:", value3);
   value1.innerHTML = value3;
 }
