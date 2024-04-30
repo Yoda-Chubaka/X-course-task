@@ -24,16 +24,16 @@ var value1 = document.getElementById('total-price');
 
 function buttonMinus() {
   value.stepDown();
-  var value2 = price *value.value-(price-100);
-  console.log(value2);
-  value1.innerHTML = value2;
+  var value3 = price * value.value-price;
+  console.log("MINUS BUTTON:", value3);
+  value1.innerHTML = value3;
 }
 
 // BUTTON PLUS
 function buttonPlus() {
   value.stepUp();
   var value2 = price *value.value;
-  console.log(value2);
+  console.log("PLUS BUTTON:", value2);
   value1.innerHTML = value2;
 }
 
