@@ -122,14 +122,14 @@
                                     -
                                 </button>
             
-                                <input class="book-quantity-input" type="number" name="number" id="book-quantity"
-                                    name="book-quantity" min="1" max="42" value="1">
+                                <input class="book-quantity-input" type="number" name="number" id="book-quantity" name="book-quantity" min="1" max="42" value="1" onchange="quantityValidate(), inputEnterQuantity()">
             
                                 <button id="plus" type="button" class="button-plus"
                                     onclick="buttonPlus(this.parentNode)">
                                     +
                                 </button>
                             </div>
+                            
                         </div>
                         <div class="total-price-specific">
                             <p>Total price</p>
@@ -138,7 +138,9 @@
                         <div class="add-button-box">
                             <a href="./full-cart.html" class="add-button">Add to cart</a>    
                         </div>
+                        <p id="for-notification" class="notify"></p>
                     </div>
+                    
                 </div>
             </section>
     

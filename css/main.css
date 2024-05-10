@@ -1498,6 +1498,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .submain-box-right p {
     margin-bottom: 30px;
@@ -1649,6 +1650,13 @@ img {
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
   }
+  .notify {
+    position: absolute;
+    top: 35%;
+    left: 41%;
+    color: red;
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 480px) {
   .section-vertical-align-specific {
@@ -1726,6 +1734,7 @@ img {
     width: 420px;
     border: 1px dashed grey;
     border-top: 0;
+    position: relative;
   }
   .submain-box-right p {
     margin-bottom: 30px;
@@ -1865,6 +1874,13 @@ img {
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
   }
+  .notify {
+    position: absolute;
+    top: 33%;
+    left: 55%;
+    color: red;
+    font-size: 14px;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-vertical-align-specific {
@@ -1930,6 +1946,7 @@ img {
     width: 250px;
     height: 260px;
     border: 1px dashed grey;
+    position: relative;
   }
   .submain-box-right p {
     margin-bottom: 20px;
@@ -2048,6 +2065,13 @@ img {
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
   }
+  .notify {
+    position: absolute;
+    top: 36%;
+    left: 33%;
+    color: red;
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .section-vertical-align-specific {
@@ -2157,6 +2181,7 @@ img {
     width: 300px;
     height: 260px;
     border: 1px dashed grey;
+    position: relative;
   }
   .submain-box-right p {
     margin-bottom: 20px;
@@ -2275,6 +2300,13 @@ img {
     color: white;
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
+  }
+  .notify {
+    position: absolute;
+    top: 34%;
+    left: 36%;
+    color: red;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 320px) {

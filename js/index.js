@@ -14,32 +14,57 @@
   }
 })();
 
-
-
 // BUTTON MINUS
-var value = document.getElementById('book-quantity');
-var price = 100;
-var value1 = document.getElementById('total-price');
-
+const value = document.getElementById('book-quantity');
+const price = 100;
+const value1 = document.getElementById('total-price');
 
 function buttonMinus() {
   value.stepDown();
-  var value3 = price * value.value;
-  console.log("MINUS BUTTON:", value3);
+  const value3 = price * value.value;
   value1.innerHTML = value3;
 }
 
 // BUTTON PLUS
 function buttonPlus() {
   value.stepUp();
-  var value2 = price *value.value;
-  console.log("PLUS BUTTON:", value2);
+  const value2 = price *value.value;
   value1.innerHTML = value2;
 }
 
-// // TOTAP PRICE
-// function totalPrice() {
-//   console.log("jhgfdf")
-//   value1.stepUp()
-// }
+// INPUT ENTER QUANTITY
+function inputEnterQuantity() {
+  const quantityInput = document.getElementById("book-quantity").value;
+  document.addEventListener( 'keyup', event => {
+    if (event.code === 'Enter') {
+      const value2 = price * value.value;
+      value1.innerHTML = value2;
+    } if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >= 43) {
+      value1.innerHTML = 0;
+    }
+});
+}
+
+// BOOK QUANTITY VALIDATION
+function quantityValidate(value) {
+  const quantityInput = document.getElementById("book-quantity").value;
+  
+  if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >=43)
+  {
+    const divQuantity = document.getElementById("for-notification");
+    divQuantity.innerHTML = "<p>Quantity must be a number</p>";
+  }
+  console.log(quantityInput);
+}
+
+
+
+
+
+
+
+
+
+
+
 
