@@ -52,7 +52,7 @@ function quantityValidate(value) {
   if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >=43)
   {
     const divQuantity = document.getElementById("for-notification");
-    divQuantity.innerHTML = "<p>Quantity must be a number</p>";
+    divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
   }
   console.log(quantityInput);
 }
