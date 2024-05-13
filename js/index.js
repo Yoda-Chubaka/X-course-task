@@ -22,7 +22,7 @@ const value1 = document.getElementById('total-price');
 function buttonMinus() {
   value.stepDown();
   const value3 = price * value.value;
-  value1.innerHTML = value3;
+  value1.innerHTML = value3; 
 }
 
 // BUTTON PLUS
