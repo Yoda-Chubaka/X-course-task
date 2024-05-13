@@ -1,3 +1,6 @@
+// import data from "/data/books.json" assert { type: "json" };
+
+
 // MOBILE MENU
 (() => {
   const refs = {
@@ -59,8 +62,31 @@ function quantityValidate(value) {
     const divQuantity = document.getElementById("for-notification");
     divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
   }
-}
+}  
 
+// JSON
+const readJSON = fetch('./data/books.json')
+    .then((response) => response.json())
+  .then((json) => console.log(json));
+    
+const parsedData = JSON.parse(readJSON);
+console.log(parsedData.author);
+
+// const bookList = .map(({ id, author, price, image, title, level, tags, amount, shortDescription, description }) => {
+//   `<ul>
+//     <li>author: ${id}</li>
+//     <li>author: ${author}</li>
+//     <li>author: ${price}</li>
+//     <li>author: ${image}</li>
+//     <li>author: ${title}</li>
+//     <li>author: ${level}</li>
+//     <li>author: ${tags}</li>
+//     <li>author: ${amount}</li>
+//     <li>author: ${shortDescription}</li>
+//     <li>author: ${description}</li>
+//   </ul>`
+// }
+// );
 
 
 
