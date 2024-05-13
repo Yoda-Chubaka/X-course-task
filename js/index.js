@@ -49,13 +49,18 @@ function inputEnterQuantity() {
 function quantityValidate(value) {
   const quantityInput = document.getElementById("book-quantity").value;
   
-  if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >=43)
-  {
+  if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >= 43) {
+    const divQuantity = document.getElementById("for-notification");
+    divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
+  } if ((quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput === 1 || quantityInput >= 43 ) {
+    const divQuantity = document.getElementById("for-notification");
+    divQuantity.innerHTML = "<p></p>";
+  } if (quantityInput >= 43) {
     const divQuantity = document.getElementById("for-notification");
     divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
   }
-  console.log(quantityInput);
 }
+
 
 
 
