@@ -1,4 +1,4 @@
-// import data from "/data/books.json" assert { type: "json" };
+
 
 
 // MOBILE MENU
@@ -65,28 +65,62 @@ function quantityValidate(value) {
 }  
 
 // JSON
-const readJSON = fetch('./data/books.json')
-    .then((response) => response.json())
-  .then((json) => console.log(json));
-    
-const parsedData = JSON.parse(readJSON);
-console.log(parsedData.author);
 
-// const bookList = .map(({ id, author, price, image, title, level, tags, amount, shortDescription, description }) => {
-//   `<ul>
-//     <li>author: ${id}</li>
-//     <li>author: ${author}</li>
-//     <li>author: ${price}</li>
-//     <li>author: ${image}</li>
-//     <li>author: ${title}</li>
-//     <li>author: ${level}</li>
-//     <li>author: ${tags}</li>
-//     <li>author: ${amount}</li>
-//     <li>author: ${shortDescription}</li>
-//     <li>author: ${description}</li>
-//   </ul>`
-// }
-// );
+import data from "/data/books.json" assert { type: "json" };
+console.log(data);
+    
+const parsedData = JSON.stringify(data);
+console.log(parsedData);
+
+const valueJSON = Object.values(data);
+console.log(valueJSON);
+
+
+// const qwerty = valueJSON.map(({ id, author, price, image, title, level, tags, amount, shortDescription, description }) =>
+//     `
+//     <li class="one-book">
+//       <a href="./specific-book.html">
+//         <div class="books-items">
+//           <img src="${image}" width="150" alt="book" />
+//             <div>
+//               <h4 class="header-name-box">${title}</h4>
+//                 <p class="header-name-box author">${author}</p>
+//                   </div>
+//         </div>
+//       </a>
+//       <div class="books-price">
+//         <h4 header-name-box author>${price}</h4>
+//         <a href="./specific-book.html" class="link-button">View</a>
+//       </div>
+//     </li>
+//     `
+//   )
+
+
+let list = document.querySelector(".books-list");
+
+const bookList = valueJSON.map(({ id, author, price, image, title, level, tags, amount, shortDescription, description }) =>
+   list.innerHTML += `
+    <li class="one-book" id=${id}>
+      <a href="./specific-book.html">
+        <div class="books-items">
+          <img src="${image}" width="150" alt="book" />
+            <div>
+              <h4 class="header-name-box">${title}</h4>
+                <p class="header-name-box author">${author}</p>
+                  </div>
+        </div>
+      </a>
+      <div class="books-price">
+        <h4 header-name-box author>${price}</h4>
+        <a href="./specific-book.html" class="link-button">View</a>
+      </div>
+    </li>
+  `
+);
+
+
+
 
 
 
