@@ -64,7 +64,7 @@ function quantityValidate(value) {
   }
 }  
 
-// JSON
+// BOOKS.JSON
 
 import data from "/data/books.json" assert { type: "json" };
 console.log(data);
@@ -96,11 +96,11 @@ console.log(valueJSON);
 //     `
 //   )
 
-
+// Другий варіант роботи з JSON через innerHTML
 let list = document.querySelector(".books-list");
 
 const bookList = valueJSON.map(({ id, author, price, image, title, level, tags, amount, shortDescription, description }) =>
-   list.innerHTML += `
+  list.innerHTML += `
     <li class="one-book" id=${id}>
       <a href="./specific-book.html">
         <div class="books-items">
@@ -118,6 +118,7 @@ const bookList = valueJSON.map(({ id, author, price, image, title, level, tags, 
     </li>
   `
 );
+console.log(bookList)
 
 
 
