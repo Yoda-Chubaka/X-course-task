@@ -915,10 +915,11 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 250px;
+    height: 360px;
   }
   .books-items {
     width: 250px;
-    height: 195px;
+    height: 270px;
     padding: 15px;
   }
   .header-name-box {
@@ -1071,10 +1072,11 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 200px;
+    height: 375px;
   }
   .books-items {
     width: 200px;
-    height: 195px;
+    height: 290px;
     padding: 10px;
   }
   .header-name-box {
@@ -1228,10 +1230,11 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 210px;
+    height: 380px;
   }
   .books-items {
     width: 210px;
-    height: 195px;
+    height: 290px;
     padding: 10px;
   }
   .header-name-box {
