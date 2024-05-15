@@ -18,7 +18,7 @@ const container = document.querySelector('.books-list');
                 <li class="one-book" id=${book.id}>
                   <a href="./specific-book.html">
                     <div class="books-items">
-                      <img src="${book.image}" width="150" alt="${book.title}" />
+                    <img src="${(book.image) ? book.image : "./images/book-template.jpg"}" width="150" alt="${book.title}" />
                       <div>
                         <h4 class="header-name-box">${book.title}</h4>
                           <p class="header-name-box author">${book.author}</p>
