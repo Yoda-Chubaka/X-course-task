@@ -8,14 +8,14 @@ function renderBooks() {
 }
 renderBooks();
 
-
-const container = document.querySelector('.books-list');
-        booksData.books.forEach(book => {
+// Тут створюю Li для файлу list-of-books.html та вкладаю їх в ul з класом books-list
+ const container = document.querySelector('.books-list');
+          booksData.books.forEach(book => {
           const bookElement = document.createElement('li');
           console.log(book);
           console.log(bookElement);
             bookElement.innerHTML = `
-                <li class="one-book" id=${book.id}>
+                <li class="one-book" data-id=${book.id} id=${book.id}>
                   <a href="./specific-book.html">
                     <div class="books-items">
                     <img src="${(book.image) ? book.image : "./images/book-template.jpg"}" width="150" alt="${book.title}" />
