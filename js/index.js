@@ -16,7 +16,7 @@
 
 // BUTTON MINUS
 const value = document.getElementById('book-quantity');
-const price = 100;
+const price = document.getElementById('price-id');
 const value1 = document.getElementById('total-price');
 
 function buttonMinus() {
