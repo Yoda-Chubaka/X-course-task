@@ -82,28 +82,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function renderBookDetails(bookId) {
     const certainBook = booksData.books.find(book => book.id == bookId);
-    // const bookImage = document.createElement('img');
-    //   const itemImage = document.getElementById('item-card');
-    //   itemImage.innerHTML =
-    //   `
-    //   <img src="${book.image ? book.image : './images/book-template.jpg'}" width="200" alt="${book.title}"/>
-    //   `
-    // itemImage.appendChild(bookImage);
+    
     
     if (certainBook) {
       document.querySelector('.li-book-name').textContent = certainBook.title;
       document.querySelector('.li-book-name-2').textContent = certainBook.author;
       document.querySelector('.li-book-name-3').textContent = certainBook.level;
-      document.querySelector('.li-book-name-4').textContent = certainBook.tags;
+      const tagElements = document.querySelector('.li-book-name-4');
+      for (const tag of certainBook.tags) {
+        const linkTag = document.createElement("li");
+        linkTag.textContent = '#' + tag;
+        tagElements.append(linkTag);
+    }
       document.getElementById('price-id').textContent = certainBook.price;
       document.getElementById('total-price').textContent = certainBook.price;
       document.getElementById('book-description-article').textContent = certainBook.shortDescription;
-      
+      const bookImage = document.getElementById('certain-book-image');
+      bookImage.setAttribute('src', `${certainBook.image ? certainBook.image : './images/book-template.jpg'}`);
     } else {
       console.error('Book not found');
     }
   }
 
+  
   renderBooks();
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -112,3 +113,6 @@ document.addEventListener('DOMContentLoaded', function () {
     renderBookDetails(bookId);
   }
 });
+
+
+      

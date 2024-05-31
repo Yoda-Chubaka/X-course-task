@@ -2084,6 +2084,8 @@ img {
     width: 950px;
     margin-left: auto;
     margin-right: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -2125,8 +2127,8 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 700px;
-    height: 400px;
+    width: 1150px;
+    height: 395px;
     border: 1px dashed grey;
     padding: 15px;
     margin-right: 0;
@@ -2138,6 +2140,9 @@ img {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 400px;
