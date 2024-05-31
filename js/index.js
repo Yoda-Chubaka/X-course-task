@@ -1,3 +1,4 @@
+
 // MOBILE MENU
 (() => {
   const refs = {
@@ -14,6 +15,11 @@
   }
 })();
 
+// function updateTotalPrice(price, quantity = 1) {
+//     const totalPriceElement = document.getElementById('total-price');
+//     totalPriceElement.textContent = (price * quantity).toFixed(2);
+// }
+
 // BUTTON MINUS
 const value = document.getElementById('book-quantity');
 const price = document.getElementById('price-id');
@@ -22,14 +28,14 @@ const value1 = document.getElementById('total-price');
 function buttonMinus() {
   value.stepDown();
   const value3 = price * value.value;
-  value1.innerHTML = value3; 
+  value1.textContent = value3; 
 }
 
 // BUTTON PLUS
 function buttonPlus() {
   value.stepUp();
   const value2 = price *value.value;
-  value1.innerHTML = value2;
+  value1.textContent = value2;
 }
 
 // INPUT ENTER QUANTITY
@@ -38,7 +44,7 @@ function inputEnterQuantity() {
   document.addEventListener( 'keyup', event => {
     if (event.code === 'Enter') {
       const value2 = price * value.value;
-      value1.innerHTML = value2;
+      value1.textContent = value2;
     } if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >= 43) {
       value1.innerHTML = 0;
     }
@@ -60,6 +66,8 @@ function quantityValidate(value) {
     divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
   }
 }  
+
+
 
 
 

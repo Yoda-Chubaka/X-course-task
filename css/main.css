@@ -1486,11 +1486,7 @@ img {
     margin-bottom: 0;
   }
   .description-box {
-    width: 280px;
-    margin-top: 15px;
-  }
-  .description-box h3 {
-    font-size: 14px;
+    width: 245px;
   }
   .description-box p {
     font-size: 14px;
@@ -1725,11 +1721,7 @@ img {
     margin-bottom: 0;
   }
   .description-box {
-    width: 420px;
-    margin-top: 15px;
-  }
-  .description-box h3 {
-    font-size: 15px;
+    width: 380px;
   }
   .description-box p {
     font-size: 15px;
@@ -2111,7 +2103,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    max-width: 950px;
+    max-width: 900px;
     height: 400px;
     margin-bottom: 80px;
   }
@@ -2127,7 +2119,7 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 1150px;
+    width: 900px;
     height: 395px;
     border: 1px dashed grey;
     padding: 15px;
@@ -2182,9 +2174,6 @@ img {
             justify-content: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .description-box div h3 {
-    margin-bottom: 0;
   }
   .submain-box-right {
     padding: 20px;

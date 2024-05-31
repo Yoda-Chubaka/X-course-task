@@ -76,13 +76,13 @@
             <div class="main-book-list">
                 <form class="books-list-form">
     
-                    <div class=" w3-large box-search">
-                        <input id="book-search" class="book-search" type="text" placeholder="Search by book name" />
+                    <div class="w3-large box-search">
+                        <input id="book-search" class="book-search" type="text" placeholder="Search by book name" onchange="filterBooksByName()"/>
                         <i class="fa fa-search search-icon"></i>
                     </div>
                    
                     <div class="select-mobile">
-                        <select>
+                        <select id="price-filter" onclick="filterBooksByPrice()">
                             <option class="option-price" selected value="0">Price</option>
                             <option class="option-choice-1" value="1">Up to 15$</option>
                             <option class="option-choice-2" value="2">$15 - 30$</option>
@@ -92,7 +92,7 @@
                 </form>
                
                     <ul class="books-list" id="book-list">
-                        <!-- Тут li створюються через JS файл і я не знаю як їм вказати 'data-id'=1,2..  -->
+                        <!-- Тут li створюються через JS файл -->
                     </ul>
             </div>
         </section>
