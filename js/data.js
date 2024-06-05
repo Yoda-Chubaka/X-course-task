@@ -66,25 +66,77 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
  // FILTERS
 
 function filterBooksByName(name) {
-		return books.filter(book => book.title.toLowerCase().includes(name.toLowerCase()));
-	}
-	
-	function filterBooksByPrice(priceRange) {
-		if (priceRange === 'all') {
-			return books;
-		} else if (priceRange === '15') {
-			return books.filter(book => book.price <= 15);
-		} else if (priceRange === '15-30') {
-			return books.filter(book => book.price > 15 && book.price <= 30);
-		} else if (priceRange === '30') {
-			return books.filter(book => book.price > 30);
-		}
-}  
+  const searchInput = document.getElementById("book-search");
+  const inputValue = searchInput.value;
+  document.addEventListener('keyup', event => {
+  if (event.code === 'Enter') {
+    return booksData.books.filter(book => book.title.toLowerCase().includes(name.toLowerCase()));
+  }
+  })
+}
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let bookPrice = parseFloat(document.getElementById("price-id").innerText.replace("$", ""));
+    let bookQuantity = document.getElementById("book-quantity");
+    let totalPriceElement = document.getElementById("total-price");
+    const increaseButton = document.getElementById("plus");
+    const decreaseButton = document.getElementById("minus");
+  console.log(bookPrice)
+    function updatePrice(bookPrice, bookQuantity) {
+        let quantity = bookQuantity.value;
+        if (quantity < 0) {
+            bookQuantity.value = 0;
+            quantity = 0;
+        }
+        let totalPrice = bookPrice * bookQuantity.value;
+        totalPriceElement.innerText = totalPrice.toFixed(2);
+    }
+    updatePrice(bookPrice, bookQuantity);
+    bookQuantity.addEventListener("input", function()
+    {
+        updatePrice(bookPrice, bookQuantity);
+    });
+
+    increaseButton.addEventListener("click", function() {
+        bookQuantity.value = parseInt(bookQuantity.value) + 1;
+        updatePrice(bookPrice, bookQuantity);
+    });
+
+    decreaseButton.addEventListener("click", function() {
+        bookQuantity.value = parseInt(bookQuantity.value) - 1;
+        updatePrice(bookPrice, bookQuantity);
+    });
+  
+  document.addEventListener('keyup', event => {
+    let bookQuantity = document.getElementById("book-quantity");
+    
+    if (event.code === 'Enter') {
+      let totalPrice = bookPrice * bookQuantity.value;
+      totalPriceElement.innerText = totalPrice.toFixed(2);
+    }
+    if (!(bookQuantity.value >= 1) || bookQuantity.value === "e" || bookQuantity.value === "," || bookQuantity.value >= 43) {
+      totalPriceElement.innerText = 0;
+    }
+});
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
