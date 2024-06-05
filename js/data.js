@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function renderBookDetails(bookId) {
     const certainBook = booksData.books.find(book => book.id == bookId);
-    
-    
+  
     if (certainBook) {
       document.querySelector('.li-book-name').textContent = certainBook.title;
       document.querySelector('.li-book-name-2').textContent = certainBook.author;
@@ -53,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   
+
+
   renderBooks();
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -61,6 +62,14 @@ document.addEventListener('DOMContentLoaded', function () {
     renderBookDetails(bookId);
   }
 });
+
+
+
+
+
+
+
+
 
  // FILTERS
 
@@ -78,4 +87,4 @@ function filterBooksByName(name) {
 		} else if (priceRange === '30') {
 			return books.filter(book => book.price > 30);
 		}
-}     
+}  

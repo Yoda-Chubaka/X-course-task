@@ -15,27 +15,29 @@
   }
 })();
 
-// function updateTotalPrice(price, quantity = 1) {
-//     const totalPriceElement = document.getElementById('total-price');
-//     totalPriceElement.textContent = (price * quantity).toFixed(2);
-// }
+
+
 
 // BUTTON MINUS
-const value = document.getElementById('book-quantity');
-const price = document.getElementById('price-id');
-const value1 = document.getElementById('total-price');
+const bookQuantity = document.getElementById('book-quantity');
+let bookPrice = document.getElementById('price-id');
+const bookTotalPrice = document.getElementById('total-price');
+let bookPriceInt = parseInt(bookTotalPrice.textContent);
+console.log(bookPriceInt);
 
 function buttonMinus() {
-  value.stepDown();
-  const value3 = price * value.value;
-  value1.textContent = value3; 
+  bookQuantity.stepDown();
+  const value3 = bookPrice * bookQuantity.value;
+  console.log(value3)
+  bookTotalPrice.textContent = value3; 
 }
 
 // BUTTON PLUS
 function buttonPlus() {
-  value.stepUp();
-  const value2 = price *value.value;
-  value1.textContent = value2;
+  bookQuantity.stepUp();
+  const value2 = bookPrice *bookQuantity.value;
+  console.log(value2)
+  bookTotalPrice.textContent = value2;
 }
 
 // INPUT ENTER QUANTITY
@@ -43,10 +45,10 @@ function inputEnterQuantity() {
   const quantityInput = document.getElementById("book-quantity").value;
   document.addEventListener( 'keyup', event => {
     if (event.code === 'Enter') {
-      const value2 = price * value.value;
-      value1.textContent = value2;
+      const value2 = bookPrice * bookQuantity.value;
+      totalPrice.textContent = value2;
     } if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >= 43) {
-      value1.innerHTML = 0;
+      totalPrice.innerHTML = 0;
     }
 });
 }
@@ -66,6 +68,10 @@ function quantityValidate(value) {
     divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
   }
 }  
+
+
+
+
 
 
 
