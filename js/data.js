@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <a href="./specific-book.html?bookId=${book.id}">
           <div class="books-items">
             <img src="${book.image ? book.image : './images/book-template.jpg'}" width="150" alt="${book.title}" />
-            <div>
+            <div class="author-box>
               <h4 class="header-name-box">${book.title}</h4>
               <p class="header-name-box author">${book.author}</p>
             </div>
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('keyup', event => {
     let bookQuantity = document.getElementById("book-quantity");
     
-    if (event.code === 'Enter' || true) {
+    if (true) {
       let totalPrice = bookPrice * bookQuantity.value;
       totalPriceElement.innerText = totalPrice.toFixed(2);
       const divQuantity = document.getElementById("for-notification");

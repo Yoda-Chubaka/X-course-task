@@ -915,12 +915,19 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 250px;
-    height: 360px;
+    height: 390px;
   }
   .books-items {
     width: 250px;
-    height: 270px;
+    height: 310px;
     padding: 15px;
+    margin-bottom: 15px;
+  }
+  .books-items img {
+    margin-bottom: 10px;
+  }
+  .author-box {
+    height: 200px;
   }
   .header-name-box {
     margin-top: 0;
@@ -941,7 +948,7 @@ img {
     width: 250px;
     height: 95px;
     padding: 15px;
-    padding-top: 30px;
+    margin-top: 10px;
   }
   .link-button {
     display: inline-block;
@@ -1072,12 +1079,12 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 200px;
-    height: 375px;
+    height: 385px;
   }
   .books-items {
     width: 200px;
     height: 290px;
-    padding: 10px;
+    padding: 15px;
   }
   .header-name-box {
     margin-top: 0;
@@ -1096,8 +1103,8 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     width: 200px;
-    height: 95px;
-    padding: 10px;
+    height: 75px;
+    padding: 15px;
     padding-top: 30px;
   }
   .link-button {
@@ -1219,23 +1226,27 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 25px;
+    gap: 44px;
     margin-bottom: 60px;
   }
   .one-book {
     border: 1px solid grey;
     width: 210px;
-    height: 380px;
+    height: 415px;
   }
   .books-items {
     width: 210px;
-    height: 290px;
+    height: 320px;
     padding: 10px;
+  }
+  .author-box {
+    height: 210px;
+    margin-bottom: 20px;
   }
   .header-name-box {
     margin-top: 0;
@@ -1253,8 +1264,8 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    width: 200px;
-    height: 95px;
+    width: 208px;
+    height: 75px;
     padding: 10px;
     padding-top: 30px;
   }
@@ -1359,18 +1370,18 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 35px;
+    gap: 44px;
     margin-bottom: 60px;
   }
   .one-book {
     border: 1px solid grey;
     width: 220px;
-    height: 410px;
+    height: 415px;
   }
   .books-items {
     width: 220px;
