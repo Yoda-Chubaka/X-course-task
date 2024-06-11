@@ -51,9 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  
-
-
   renderBooks();
 
   const urlParams = new URLSearchParams(window.location.search);
@@ -61,26 +58,47 @@ document.addEventListener('DOMContentLoaded', function () {
   if (bookId) {
     renderBookDetails(bookId);
   }
+
+  // renderBooks();
+	
+		document.getElementById('book-search').addEventListener('input', (event) => {
+			const searchValue = event.target.value.toLowerCase();
+			const priceFilterValue = document.getElementById('price-filter').value;
+			const filteredBooks = filterBooks(searchValue, priceFilterValue);
+			renderBooks(filteredBooks);
+		});
+	
+		document.getElementById('price-filter').addEventListener('change', (event) => {
+			const priceFilterValue = event.target.value;
+			const searchValue = document.getElementById('book-search').value.toLowerCase();
+			const filteredBooks = filterBooks(searchValue, priceFilterValue);
+			renderBooks(filteredBooks);
+		});
 });
 
+// FILTERS
+  function filterBooksByName(name) {
+		return booksData.books.filter(book => book.title.toLowerCase().includes(name.toLowerCase()));
+	}
+	
+	function filterBooksByPrice(price) {
+		if (price === 'all') {
+			return booksData;
+		} else if (price === '15') {
+			return booksData.books.filter(book => book.price <= 15);
+		} else if (price === '15-30') {
+			return booksData.books.filter(book => book.price > 15 && book.price <= 30);
+		} else if (price === '30') {
+			return booksData.books.filter(book => book.price > 30);
+		}
+	}
+	
+	function filterBooks(searchValue, priceFilterValue) {
+		const filteredBooksByName = filterBooksByName(searchValue);
+		return filterBooksByPrice(priceFilterValue).filter(book => filteredBooksByName.includes(book));
+	}
 
-
-
- // FILTERS
-
-function filterBooksByName(name) {
-  const searchInput = document.getElementById("book-search");
-  const inputValue = searchInput.value;
-  document.addEventListener('keyup', event => {
-  if (event.code === 'Enter') {
-    return booksData.books.filter(book => book.title.toLowerCase().includes(name.toLowerCase()));
-  }
-  })
-}
-
-
-
-
+// INCREASE AND DECREASE BUTTONS AND TOTAL PRICE
 document.addEventListener('DOMContentLoaded', function() {
     let bookPrice = parseFloat(document.getElementById("price-id").innerText.replace("$", ""));
     let bookQuantity = document.getElementById("book-quantity");
@@ -123,8 +141,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!(bookQuantity.value >= 1) || bookQuantity.value === "e" || bookQuantity.value === "," || bookQuantity.value >= 43) {
       totalPriceElement.innerText = 0;
     }
+  });
 });
-});
+
+
+
 
 
 
