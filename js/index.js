@@ -80,6 +80,8 @@ function inputEnterQuantity() {
       totalPrice.textContent = value2;
     }
     if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >= 43) {
+      const divQuantity = document.getElementById("for-notification");
+      divQuantity.innerHTML = "<p>You should enter correct quantity</p>";
       totalPrice.textContent = 0;
     }
 });
