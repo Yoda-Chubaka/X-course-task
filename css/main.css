@@ -1669,6 +1669,36 @@ img {
     color: red;
     font-size: 12px;
   }
+  #purchase-notification {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 135px;
+    height: 70px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    top: 83%;
+    left: 48%;
+    -webkit-transform: translate(-83%, -48%);
+            transform: translate(-83%, -48%);
+  }
+  .purchase-notification {
+    background-color: rgb(5, 202, 5);
+    border-radius: 10px;
+  }
+  .purchase-inactive {
+    overflow: hidden;
+    color: transparent;
+  }
 }
 @media screen and (min-width: 480px) {
   .section-vertical-align-specific {
@@ -1889,6 +1919,34 @@ img {
     color: red;
     font-size: 14px;
   }
+  #purchase-notification {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 265px;
+    height: 60px;
+    color: white;
+    font-weight: 600;
+    top: 84%;
+    left: 57%;
+    -webkit-transform: translate(-84%, -57%);
+            transform: translate(-84%, -57%);
+  }
+  .purchase-notification {
+    background-color: rgb(5, 202, 5);
+    border-radius: 10px;
+  }
+  .purchase-inactive {
+    overflow: hidden;
+    color: transparent;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-vertical-align-specific {
@@ -2079,6 +2137,34 @@ img {
     left: 21%;
     color: red;
     font-size: 12px;
+  }
+  #purchase-notification {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 265px;
+    height: 70px;
+    color: white;
+    font-weight: 600;
+    top: 80%;
+    left: 89%;
+    -webkit-transform: translate(-80%, -89%);
+            transform: translate(-80%, -89%);
+  }
+  .purchase-notification {
+    background-color: rgb(5, 202, 5);
+    border-radius: 10px;
+  }
+  .purchase-inactive {
+    overflow: hidden;
+    color: transparent;
   }
 }
 @media screen and (min-width: 1024px) {
