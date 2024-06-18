@@ -869,4 +869,29 @@
     color: red;
     font-size: 14px;
     }
+
+#purchase-notification {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    color: white;
+    font-weight: 600;
+    top: 77%;
+    left: 90%;
+    transform: translate(-77%, -90%);
+}
+
+.purchase-notification {
+    background-color: rgb(5, 202, 5);
+    
+    border-radius: 10px;
+}
+
+.purchase-inactive {
+    overflow: hidden;
+    color: transparent;
+}
 }
