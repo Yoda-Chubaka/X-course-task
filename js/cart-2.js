@@ -1,18 +1,18 @@
 import booksData from '../data/books.json' with { type: "json" };
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const cartMainElement = document.getElementById("container-cart");
     const addButton = document.querySelector(".add-button");
+    console.log(addButton);
+    console.log(cartMainElement);
 
-    // if (cartMainElement) {
-    //     addButton.addEventListener("click", function () {
-            
-const quantityOfBooks = document.getElementById("book-quantity").value;
+    if (cartMainElement) {
+        addButton.addEventListener("click", function () {
+            const quantityOfBooks = document.getElementById("book-quantity").value;
             const totalPriceValue = document.getElementById("total-price").textContent;
+
             if (quantityOfBooks > 0) {
-                
-                cartMainElement.insertAdjacentHTML("beforeend", `
+                cartMainElement.innerHTML = `
                     <section class="section-vertical-align-full">
                         <div>
                             <div class="purshase-button-box">
@@ -30,9 +30,9 @@ const quantityOfBooks = document.getElementById("book-quantity").value;
                             </div>
                         </div>
                     </section>
-                `);
+                `;
             } else {
-                cartMainElement.insertAdjacentHTML("beforeend", `
+                cartMainElement.innerHTML = `
                     <section class="section-vertical-align">
                         <div class="empty-box">
                             <div class="purshase-button-box">
@@ -43,10 +43,10 @@ const quantityOfBooks = document.getElementById("book-quantity").value;
                             <p class="paragraph-empty-cart-grey">Add your favorite books to cart</p>
                         </div>
                     </section>
-                `);
+                `;
             }
         });
-//     } else {
-//         console.error("Required elements not found");
-//     }
-// });
+    } else {
+        console.error("Required elements not found");
+    }
+});
