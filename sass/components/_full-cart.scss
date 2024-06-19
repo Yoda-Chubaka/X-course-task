@@ -1,13 +1,13 @@
 // 320px +
 @media screen and (min-width: 320px) {
     .section-vertical-align-full {
-    position: absolute;
+    position: normal;
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 }
 
 .link-purshase-active:hover,
@@ -82,13 +82,13 @@
 // 480px +
 @media screen and (min-width: 480px) {
     .section-vertical-align-full {
-    position: absolute;
+    position: normal;
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 }
 
 .link-purshase-active:hover,
@@ -163,13 +163,13 @@
 // 768px +
 @media screen and (min-width: 768px) {
     .section-vertical-align-full {
-        position: absolute;
+        position: normal;
         width: 100%;
         padding-left: 25px;
         padding-right: 25px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
     }
 
     .link-purshase-active:hover,
@@ -248,13 +248,13 @@
 // 1024px +
 @media screen and (min-width: 1024px) {
     .section-vertical-align-full {
-        position: absolute;
+        position: normal;
         width: 100%;
         padding-left: 25px;
         padding-right: 25px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
     }
 
     .link-purshase-active:hover,
@@ -267,7 +267,8 @@
     .active-purshase-button {
         display: block;
         height: 40px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 10px;
         padding: 2px 5px;
         font-size: 14px;
         border-radius: 8px;
@@ -318,6 +319,7 @@
         width: 60rem;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 30px;
         justify-content: end;
     }
 
