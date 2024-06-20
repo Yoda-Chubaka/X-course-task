@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
       0
     );
 
+    totalPriceValue.toFixed(2);
+
     // Генеруємо HTML для кожної книги у кошику
     const booksHTML = cartBooks.map(
       (book) => `

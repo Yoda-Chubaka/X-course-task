@@ -2729,8 +2729,6 @@ img {
   .section-vertical-align-full {
     position: normal;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   .link-purshase-active:hover,
   .link-purshase-active:focus {
@@ -2741,7 +2739,8 @@ img {
   .active-purshase-button {
     display: block;
     height: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     padding: 2px 5px;
     font-size: 14px;
     border-radius: 8px;
@@ -2798,14 +2797,34 @@ img {
   .total-price-box p {
     font-size: 14px;
     font-weight: 500;
+  }
+  .remove-button {
+    display: block;
+    height: 30px;
+    padding: 2px 4px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 81, 81);
+    outline: 0;
+    width: 100px;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(248, 81, 81);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .remove-button:hover,
+  .remove-button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(218, 3, 3);
+    border: 1px solid rgb(218, 3, 3);
   }
 }
 @media screen and (min-width: 480px) {
   .section-vertical-align-full {
     position: normal;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   .link-purshase-active:hover,
   .link-purshase-active:focus {
@@ -2816,7 +2835,8 @@ img {
   .active-purshase-button {
     display: block;
     height: 40px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     padding: 2px 5px;
     font-size: 14px;
     border-radius: 8px;
@@ -2874,13 +2894,33 @@ img {
     font-size: 14px;
     font-weight: 500;
   }
+  .remove-button {
+    display: block;
+    height: 25px;
+    padding: 2px 4px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 81, 81);
+    outline: 0;
+    width: 100px;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(248, 81, 81);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .remove-button:hover,
+  .remove-button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(218, 3, 3);
+    border: 1px solid rgb(218, 3, 3);
+  }
 }
 @media screen and (min-width: 768px) {
   .section-vertical-align-full {
     position: normal;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   .link-purshase-active:hover,
   .link-purshase-active:focus {
@@ -2891,6 +2931,7 @@ img {
   .active-purshase-button {
     display: block;
     height: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding: 2px 5px;
     font-size: 14px;
@@ -2953,13 +2994,33 @@ img {
     font-size: 14px;
     font-weight: 500;
   }
+  .remove-button {
+    display: block;
+    height: 25px;
+    padding: 2px 3px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 81, 81);
+    outline: 0;
+    width: 80px;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(248, 81, 81);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .remove-button:hover,
+  .remove-button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(218, 3, 3);
+    border: 1px solid rgb(218, 3, 3);
+  }
 }
 @media screen and (min-width: 1024px) {
   .section-vertical-align-full {
     position: normal;
     width: 100%;
-    padding-left: 25px;
-    padding-right: 25px;
   }
   .link-purshase-active:hover,
   .link-purshase-active:focus {
@@ -3033,6 +3094,28 @@ img {
   .total-price-box p {
     font-size: 18px;
     font-weight: 600;
+  }
+  .remove-button {
+    display: block;
+    height: 30px;
+    padding: 2px 4px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid rgb(248, 81, 81);
+    outline: 0;
+    width: 100px;
+    color: black;
+    font-weight: 600;
+    background-color: rgb(248, 81, 81);
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .remove-button:hover,
+  .remove-button:focus {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(218, 3, 3);
+    border: 1px solid rgb(218, 3, 3);
   }
 }
 @media screen and (min-width: 320px) {
