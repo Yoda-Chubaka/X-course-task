@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                  <button class="remove-button">Remove</button>
             </ul>
         `
-    );
+    ).join("");
     cartMainElement.innerHTML = `
             <section class="section-vertical-align-full">
                 <div>
