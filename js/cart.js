@@ -81,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
           0
         );
 
+        newTotalPriceValue.toFixed(2);
+
         const totalPriceBox = document.querySelector(
           ".total-price-box p"
         );
