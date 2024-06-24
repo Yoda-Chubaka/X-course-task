@@ -1,5 +1,5 @@
 
-// MOBILE MENU
+// CREATE MOBILE MENU (BURGER)
 (() => {
   const refs = {
     openMenuBtn: document.querySelector("[data-menu-open]"),
