@@ -267,9 +267,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (boxForNotifications) {
                     boxForNotifications.textContent = "Book has been added successfully!";
                     boxForNotifications.classList.add("purchase-notification");
-                    setTimeout(() => {
-                        boxForNotifications.classList.remove("purchase-notification");
-                    }, 2500);
+                    // setTimeout(() => {
+                    //     boxForNotifications.classList.remove("purchase-notification");
+                    // }, 2500);
                 }
             } catch (error) {
                 console.error('Error:', error.message);
