@@ -25,13 +25,26 @@ submitButton.addEventListener("click", () => {
     // ADD USERNAME TO LOCALSTORAGE
     localStorage.setItem("name", `${userName}`); 
     const localStorageName = localStorage.getItem("name");
+    const link = document.getElementById("main-header-link");
 
     if (!submitButton) {
         nameHeader.textContent = "Username";
+
     }
     if (submitButton) {
         nameHeader.textContent = localStorageName;
         name.value = "";
+        
+    }
+
+    // IF LOCALSTORAGE === NULL ACCESS TO LIST-OF-BOOKS PAGE WILL BE DENIED (IT DOESN'T WORK)
+    if (localStorageName === null) {
+        link.classList.add("enable-link");
+        
+    }
+
+    if (localStorageName !== null) {
+        link.classList.remove("enable-link");
     }
 });
 
@@ -48,7 +61,6 @@ signOutButton.addEventListener("click", () => {
         nameHeader.textContent = "Username";
     }
 })
-
 
 
 

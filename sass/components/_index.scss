@@ -199,4 +199,9 @@
             background-color: rgb(2, 70, 53);
             border: 1px solid rgb(2, 70, 53);
         }
+
+        .enable-link {
+            pointer-events: none;
+            cursor: auto;
+        }
 }
