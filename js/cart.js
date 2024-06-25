@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
       0
     );
 
-    // totalPriceValue.toFixed(2);
-
     // Генеруємо HTML для кожної книги у кошику
     const booksHTML = cartBooks.map(
       (book) => `
@@ -29,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                  <button class="remove-button">Remove</button>
             </ul>
         `
-    ).join("");
+    );
     cartMainElement.innerHTML = `
             <section class="section-vertical-align-full">
                 <div>
@@ -80,8 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
             total + book.price * book.quantity,
           0
         );
-
-        // newTotalPriceValue.toFixed(2);
 
         const totalPriceBox = document.querySelector(
           ".total-price-box p"
