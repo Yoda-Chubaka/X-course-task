@@ -30,12 +30,12 @@
             <a href="./full-cart.html">
                 <img src="./images/cart-big-3.png" class="invert" width="60" />
             </a>
-            <button class="sign-out-button" type="submit">Sign-out</button>
+            <button class="sign-out-button" id="sign-out-button" type="submit">Sign-out</button>
             <div class="username-box">
                     <a href="./index.html">
                         <div class="user-flex">
                             <img src="./images/avatar-5.png" width="64" alt="icon" />
-                            <p>Username</p>
+                            <p id="username-header">Username</p>
                         </div>
                     </a>
             </div>
@@ -77,7 +77,7 @@
                 <form action="/" method="post">
                     <label class="label-username" for="username">Username</label>
                     <input class="username-input" type="text" id="username" name="username" placeholder="type Username">
-                    <button class="sign-in-button" type="submit">Sign-in</button>
+                    <button class="sign-in-button" id="submit-user-button" type="button">Sign-in</button>
                 </form>
             </div>
         </section>
@@ -95,5 +95,6 @@
 
 
     <script src="./js/index.js"></script>
+    <script src="./js/auth.js"></script>
 </body>
 </html>

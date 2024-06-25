@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const addButton = document.querySelector(".add-button");
 
     if (addButton) {
-        addButton.addEventListener("click", async function () {
+        addButton.addEventListener("click", function () {
             const quantityOfBooks = parseInt(document.getElementById("book-quantity").value, 10);
 
             // try {
