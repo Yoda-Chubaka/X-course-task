@@ -214,6 +214,9 @@ document.addEventListener("DOMContentLoaded", function () {
             //     const booksData = await response.json();
 
                 // Отримуємо id книги з URL сторінки
+                
+
+          
                 const urlParams = new URLSearchParams(window.location.search);
                 const bookId = parseInt(urlParams.get('bookId'), 10);
 
