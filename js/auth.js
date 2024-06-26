@@ -1,67 +1,53 @@
 const name = document.getElementById("username");
 const submitButton = document.getElementById("submit-user-button");
 const nameHeader = document.getElementById("username-header");
+const usernameInput = document.getElementById("username");
+const link = document.getElementById("main-header-link");
+const signOutButton = document.getElementById("sign-out-button");
 
-let users = {};
+// ADD USERNAME TO LOCALSTORAGE
+document.addEventListener("DOMContentLoaded", () => {
+    updateUI();
+});
 
-function User(name) {
-    this.name = name;
-}
-
-function createId(users) {
-    return Object.keys(users).length;
+function updateUI() {
+    const storedName = localStorage.getItem("name");
+    nameHeader.textContent = storedName ? storedName : "Username";
+    // link.classList.toggle("enable-link", !storedName);
 }
 
 submitButton.addEventListener("click", () => {
-    const userName = name.value;
-
-    const newUser = new User(userName);
-
-    const userId = "User" + createId(users);
-    users[userId] = newUser;
-
-    console.log(users);
-
-    // ADD USERNAME TO LOCALSTORAGE
-    localStorage.setItem("name", `${userName}`); 
-    const localStorageName = localStorage.getItem("name");
-    const link = document.getElementById("main-header-link");
-
-    if (!submitButton) {
-        nameHeader.textContent = "Username";
-
-    }
-    if (submitButton) {
-        nameHeader.textContent = localStorageName;
-        name.value = "";
-        
-    }
-
-    // IF LOCALSTORAGE === NULL ACCESS TO LIST-OF-BOOKS PAGE WILL BE DENIED (IT DOESN'T WORK)
-    if (localStorageName === null) {
-        link.classList.add("enable-link");
-        
-    }
-
-    if (localStorageName !== null) {
-        link.classList.remove("enable-link");
+    const userName = usernameInput.value.trim();
+    if (userName) {
+        localStorage.setItem("name", userName);
+        updateUI();
+        usernameInput.value = "";
     }
 });
 
-// DELETE USERNAME FROM LOCALSTORAGE
-const signOutButton = document.getElementById("sign-out-button");
-
 signOutButton.addEventListener("click", () => {
     localStorage.removeItem('name');
+    updateUI();
+});
 
-    if (!signOutButton) {
-        nameHeader.textContent = localStorageName;
-    }
-    if (signOutButton) {
-        nameHeader.textContent = "Username";
-    }
-})
 
+// ACCESS DENIED
+link.addEventListener("click", (event) => {
+    if (!localStorage.getItem("name")) {
+        event.preventDefault();
+        alert("Please sign in to access the list of books.");
+    }
+});
+
+
+
+
+
+
+
+
+
+    
 
 
 

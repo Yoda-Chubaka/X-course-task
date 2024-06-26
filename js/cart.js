@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     displayEmptyCart(cartMainElement);
   }
 
-  // Додаткова логіка для видалення книг з корзини
+  // Логіка для видалення книг з корзини
   cartMainElement.addEventListener(
     "click",
     function (event) {
