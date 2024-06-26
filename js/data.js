@@ -206,17 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
         addButton.addEventListener("click", function () {
             const quantityOfBooks = parseInt(document.getElementById("book-quantity").value, 10);
 
-            // try {
-            //     const response = await fetch('../data/books.json');
-            //     if (!response.ok) {
-            //         throw new Error('Failed to fetch data');
-            //     }
-            //     const booksData = await response.json();
-
                 // Отримуємо id книги з URL сторінки
-                
-
-          
                 const urlParams = new URLSearchParams(window.location.search);
                 const bookId = parseInt(urlParams.get('bookId'), 10);
 
@@ -258,9 +248,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         boxForNotifications.classList.remove("purchase-notification");
                     }, 2500);
                 }
-            // } catch (error) {
-            //     console.error('Error:', error.message);
-            // }
         });
     } else {
         console.error("Add button element not found");
