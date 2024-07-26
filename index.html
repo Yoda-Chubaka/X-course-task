@@ -26,7 +26,7 @@
             <img src="./images/burger-icon.png" width="32" height="32" alt="burger-icon" />
         </button>
         
-        <div class="header-box">
+        <div class="header-box" id="cart-icon">
             <a href="./full-cart.html">
                 <img src="./images/cart-big-3.png" class="invert" width="60" />
             </a>
@@ -48,7 +48,7 @@
             <button type="button" class="mobile-menu__close-button" data-menu-close>
                 <img src="./images/close-button.png" width="32" height="32" alt="close-icon" />
             </button>
-            <div class="header-box-mobile">
+            <div class="header-box-mobile" id="cart-icon-mobile">
             <div class="cart-box-mobile">
                 <a href="./full-cart.html" class="cart-link-mobile">
                     <img src="./images/cart-big-3.png" class="invert" width="50" height="50"/>
@@ -66,6 +66,7 @@
             <button class="sign-out-button-mobile" type="submit">Sign-out</button>
         </div>
         </div>
+        <div id="mobile-menu-notification"></div>
     </div>
 </header>
 
@@ -78,8 +79,11 @@
                     <label class="label-username" for="username">Username</label>
                     <input class="username-input" type="text" id="username" name="username" placeholder="type Username">
                     <button class="sign-in-button" id="submit-user-button" type="button">Sign-in</button>
+                    <div id="denied-notification"></div>
                 </form>
+                
             </div>
+            
         </section>
 
         

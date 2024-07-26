@@ -472,6 +472,14 @@ header {
         height: 60px;
     }
 
+    .header-box-auth {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 320px;
+        height: 60px;
+    }
+
     .invert {
         filter: invert(1);
     }
@@ -508,10 +516,22 @@ header {
         width: 140px;
     }
 
+    .username-box-auth {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 140px;
+    }
+
     .user-flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         align-items: center;
+    }
+
+    .user-flex img {
+        margin-right: 5px;
+        margin-left: 15px;
     }
 
     .user-flex p {

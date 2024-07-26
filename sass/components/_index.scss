@@ -1,13 +1,13 @@
 // 320px +
 @media screen and (min-width: 320px) {
     .section-vertical-align-box {
-    position: absolute;
+    position: normal;
     width: 275px;
-    // padding-left: 25px;
-    // padding-right: 25px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-left: 10px;
+    padding-right: 10px;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 }
 
 .user-box {
@@ -35,6 +35,7 @@
     color: grey;
     font-size: 14px;
     border-radius: 8px;
+    border: 1px solid grey;
 }
 
 .sign-in-button {
@@ -60,6 +61,42 @@
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
 }
+
+.access-denied {
+    border: 1px solid rgb(206, 2, 2);
+}
+
+.denied-notification {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    height: 40px;
+    width: 275px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 74%;
+    left: 71%;
+    transform: translate(-74%, -71%);
+}
+
+.denied-notification-mobile {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    height: 40px;
+    width: 271px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 54%;
+    left: 53%;
+    transform: translate(-54%, -53%);
+}
 }
 
 
@@ -68,8 +105,48 @@
 // 480px +
 @media screen and (min-width: 480px) {
     .section-vertical-align-box {
+        position: absolute;
         width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
+    .access-denied {
+        border: 1px solid rgb(206, 2, 2);
+    }
+
+    .denied-notification {
+        position: absolute;
+        font-size: 14px;
+        color: white;
+        height: 50px;
+        width: 200px;
+        background-color: rgb(206, 2, 2);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 100%;
+        left: 75%;
+        transform: translate(-100%, -75%);
+    }
+
+    .denied-notification-mobile {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    height: 40px;
+    width: 228px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 54%;
+    left: 52%;
+    transform: translate(-54%, -52%);
+}
 }
 
 
@@ -137,6 +214,26 @@
         background-color: rgb(2, 70, 53);
         border: 1px solid rgb(2, 70, 53);
     }
+
+    .access-denied {
+        border: 1px solid rgb(206, 2, 2);
+    }
+
+    .denied-notification {
+        position: absolute;
+        font-size: 16px;
+        color: white;
+        height: 50px;
+        width: 200px;
+        background-color: rgb(206, 2, 2);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 74%;
+        left: 21%;
+        transform: translate(-74%, -21%);
+    }
 }
 
 
@@ -146,13 +243,13 @@
 // 1024px +
 @media screen and (min-width: 1024px) {
     .section-vertical-align-box {
-            position: absolute;
+            position: normal;
             width: 100%;
             padding-left: 25px;
             padding-right: 25px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
         }
     
         .user-box {
@@ -203,5 +300,25 @@
         .enable-link {
             pointer-events: none;
             cursor: auto;
+        }
+
+        .access-denied {
+            border: 1px solid rgb(206, 2, 2);
+        }
+
+        .denied-notification {
+            position: absolute;
+            font-size: 16px;
+            color: white;
+            height: 50px;
+            width: 200px;
+            background-color: rgb(206, 2, 2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 76%;
+            left: 35%;
+            transform: translate(-76%, -35%);
         }
 }

@@ -18,41 +18,6 @@
 
 
 
-// // BUTTON MINUS
-// const bookQuantity = document.getElementById('book-quantity');
-// let bookPrice = document.getElementById('price-id');
-// const bookTotalPrice = document.getElementById('total-price');
-// // let bookPriceInt = parseInt(bookTotalPrice.textContent);
-// // console.log(bookPriceInt);
-
-// function buttonMinus() {
-//   bookQuantity.stepDown();
-//   const value3 = bookPrice * bookQuantity.value;
-//   console.log(value3)
-//   bookTotalPrice.textContent = value3;
-// }
-
-// // BUTTON PLUS
-// function buttonPlus() {
-//   bookQuantity.stepUp();
-//   const value2 = bookPrice *bookQuantity.value;
-//   console.log(value2)
-//   bookTotalPrice.textContent = value2;
-// }
-
-// // INPUT ENTER QUANTITY
-// function inputEnterQuantity() {
-//   const quantityInput = document.getElementById("book-quantity").value;
-//   document.addEventListener( 'keyup', event => {
-//     if (event.code === 'Enter') {
-//       const value2 = bookPrice * bookQuantity.value;
-//       totalPrice.textContent = value2;
-//     } if (!(quantityInput >= 1) || quantityInput === "e" || quantityInput === "," || quantityInput >= 43) {
-//       totalPrice.innerHTML = 0;
-//     }
-// });
-// }
-
 // // BOOK QUANTITY VALIDATION
 function quantityValidate(value) {
   const quantityInput = document.getElementById("book-quantity").value;

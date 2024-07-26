@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
           <div class="books-items">
             <img src="${book.image ? book.image : './images/book-template.jpg'}" width="150" alt="${book.title}" />
             <div class="author-box>
-              <h4 class="header-name-box">${book.title}</h4>
-              <p class="header-name-box author">${book.author}</p>
+              <h4 class="header-name-box" id="author-box">${book.title.length > 25 ? `${book.title.slice(0, 25)}…` : book.title}</h4>
+              <p class="header-name-box author">${book.author.length > 25? `${book.author.slice(0, 25)}...` : book.author}</p>
             </div>
           </div>
         </a>
@@ -84,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
   });
 });
+
+
 
 // FILTER BOOKS BY NAME ON A PAGE "LIST-OF-BOOKS"
 function filterBooksByName(name) {

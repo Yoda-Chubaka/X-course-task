@@ -77,12 +77,10 @@ img {
 }
 @media screen and (min-width: 320px) {
   .section-vertical-align-box {
-    position: absolute;
+    position: normal;
     width: 275px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .user-box {
     width: 275px;
@@ -106,6 +104,7 @@ img {
     color: grey;
     font-size: 14px;
     border-radius: 8px;
+    border: 1px solid grey;
   }
   .sign-in-button {
     display: block;
@@ -130,10 +129,109 @@ img {
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
   }
+  .access-denied {
+    border: 1px solid rgb(206, 2, 2);
+  }
+  .denied-notification {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    height: 40px;
+    width: 275px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 74%;
+    left: 71%;
+    -webkit-transform: translate(-74%, -71%);
+            transform: translate(-74%, -71%);
+  }
+  .denied-notification-mobile {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    height: 40px;
+    width: 271px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 54%;
+    left: 53%;
+    -webkit-transform: translate(-54%, -53%);
+            transform: translate(-54%, -53%);
+  }
 }
 @media screen and (min-width: 480px) {
   .section-vertical-align-box {
+    position: absolute;
     width: 400px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .access-denied {
+    border: 1px solid rgb(206, 2, 2);
+  }
+  .denied-notification {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 100%;
+    left: 75%;
+    -webkit-transform: translate(-100%, -75%);
+            transform: translate(-100%, -75%);
+  }
+  .denied-notification-mobile {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    height: 40px;
+    width: 228px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 54%;
+    left: 52%;
+    -webkit-transform: translate(-54%, -52%);
+            transform: translate(-54%, -52%);
   }
 }
 @media screen and (min-width: 768px) {
@@ -193,17 +291,38 @@ img {
     background-color: rgb(2, 70, 53);
     border: 1px solid rgb(2, 70, 53);
   }
+  .access-denied {
+    border: 1px solid rgb(206, 2, 2);
+  }
+  .denied-notification {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 74%;
+    left: 21%;
+    -webkit-transform: translate(-74%, -21%);
+            transform: translate(-74%, -21%);
+  }
 }
 @media screen and (min-width: 1024px) {
   .section-vertical-align-box {
-    position: absolute;
+    position: normal;
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
   }
   .user-box {
     width: 300px;
@@ -249,6 +368,31 @@ img {
   .enable-link {
     pointer-events: none;
     cursor: auto;
+  }
+  .access-denied {
+    border: 1px solid rgb(206, 2, 2);
+  }
+  .denied-notification {
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(206, 2, 2);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 76%;
+    left: 35%;
+    -webkit-transform: translate(-76%, -35%);
+            transform: translate(-76%, -35%);
   }
 }
 @media screen and (min-width: 320px) {
@@ -743,6 +887,19 @@ img {
     width: 320px;
     height: 60px;
   }
+  .header-box-auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 320px;
+    height: 60px;
+  }
   .invert {
     -webkit-filter: invert(1);
             filter: invert(1);
@@ -781,16 +938,32 @@ img {
             align-items: center;
     width: 140px;
   }
+  .username-box-auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 140px;
+  }
   .user-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .user-flex img {
+    margin-right: 5px;
+    margin-left: 15px;
   }
   .user-flex p {
     font-size: 18px;
