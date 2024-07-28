@@ -39,7 +39,6 @@ link.addEventListener("click", (event) => {
     if (!localStorage.getItem("name")) {
         event.preventDefault();
         deniedUI();
-        // alert("Please sign in to access the list of books.");
     }
 });
 
@@ -78,6 +77,8 @@ cartIconMobile.addEventListener("click", (event) => {
         deniedUI();
     }
 });
+
+
 
 
 

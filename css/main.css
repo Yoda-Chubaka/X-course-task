@@ -631,10 +631,36 @@ img {
   .header-name {
     font-size: 18px;
   }
+  .header-box-auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 320px;
+    height: 60px;
+  }
   .cart-box-mobile {
     width: 7.5rem;
     margin: 0 auto;
     margin-bottom: 15px;
+  }
+  .username-box-auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 140px;
+    margin-left: 15px;
   }
   .username-box-mobile {
     width: 11.5rem;
@@ -768,7 +794,20 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 340px;
+    width: 350px;
+    height: 60px;
+  }
+  .header-box-auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 320px;
     height: 60px;
   }
   .header-box img {
@@ -813,6 +852,19 @@ img {
     width: 145px;
     margin-left: -15px;
   }
+  .username-box-auth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 120px;
+    margin-left: 10px;
+  }
   .username-box a {
     width: 100%;
   }
@@ -820,13 +872,17 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+  }
+  .user-flex img {
+    margin-right: 5px;
+    margin-left: 15px;
   }
   .user-flex p {
     font-size: 16px;
@@ -1092,11 +1148,11 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 250px;
-    height: 390px;
+    height: 350px;
   }
   .books-items {
     width: 250px;
-    height: 310px;
+    height: 270px;
     padding: 15px;
     margin-bottom: 15px;
   }
@@ -1256,11 +1312,11 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 200px;
-    height: 385px;
+    height: 375px;
   }
   .books-items {
     width: 200px;
-    height: 290px;
+    height: 277px;
     padding: 15px;
   }
   .header-name-box {
@@ -1414,11 +1470,11 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 210px;
-    height: 415px;
+    height: 355px;
   }
   .books-items {
     width: 210px;
-    height: 320px;
+    height: 260px;
     padding: 10px;
   }
   .author-box {
@@ -1558,13 +1614,13 @@ img {
   .one-book {
     border: 1px solid grey;
     width: 220px;
-    height: 415px;
+    height: 360px;
   }
   .books-items {
     width: 220px;
-    height: 195px;
+    height: 190px;
     padding: 15px;
-    height: 320px;
+    height: 260px;
   }
   .header-name-box {
     margin-top: 0;
@@ -1583,7 +1639,7 @@ img {
         -ms-flex-align: baseline;
             align-items: baseline;
     width: 220px;
-    height: 95px;
+    height: 90px;
     padding: 15px;
     padding-top: 30px;
   }
@@ -2647,6 +2703,7 @@ img {
   }
   .inactive-purshase-button {
     display: block;
+    margin-top: 10px;
     margin-bottom: 25px;
     padding: 2px 5px;
     font-size: 14px;
@@ -2726,6 +2783,7 @@ img {
   }
   .inactive-purshase-button {
     display: block;
+    margin-top: 20px;
     margin-bottom: 30px;
     padding: 2px 5px;
     font-size: 14px;
@@ -2805,6 +2863,7 @@ img {
   }
   .inactive-purshase-button {
     display: block;
+    margin-top: 10px;
     margin-bottom: 30px;
     padding: 2px 5px;
     font-size: 14px;
@@ -2873,6 +2932,7 @@ img {
   .inactive-purshase-button {
     display: block;
     height: 40px;
+    margin-top: 0;
     margin-bottom: 30px;
     padding: 2px 5px;
     font-size: 14px;
@@ -2945,7 +3005,7 @@ img {
     display: flex;
     border: 1px solid grey;
     width: 100%;
-    height: 40px;
+    height: 60px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -3292,6 +3352,12 @@ img {
     color: white;
     background-color: rgb(218, 3, 3);
     border: 1px solid rgb(218, 3, 3);
+  }
+  .purchase-notification {
+    color: black;
+    width: 150px;
+    height: 100px;
+    background-color: green;
   }
 }
 @media screen and (min-width: 320px) {
