@@ -84,15 +84,13 @@ function purchaseUI() {
   purchaseNotification.textContent = "Thank you!!";
   purchaseNotification.classList.add("purchase-notification");
   const cartMainElementNew = document.getElementById("div-new");
-  setTimeout(() => {
-    
-                        purchaseNotification.textContent = "";
-                        purchaseNotification.classList.remove("purchase-notification");
-  }, 2500);
+  
   if (purchaseButton) {
     setTimeout(() => {
       displayEmptyCart(cartMainElementNew);
-    }, 2550) 
+      purchaseNotification.textContent = "";
+                        purchaseNotification.classList.remove("purchase-notification");
+    }, 1000) 
   }
 }
 
