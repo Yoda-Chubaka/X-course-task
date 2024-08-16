@@ -81,15 +81,17 @@ purchaseButton.addEventListener("click", function (event) {
 });
 
 function purchaseUI() {
+  purchaseButton.classList.add("active-purchase-hidden");
   purchaseNotification.textContent = "Thank you!!";
   purchaseNotification.classList.add("purchase-notification");
   const cartMainElementNew = document.getElementById("div-new");
   
   if (purchaseButton) {
+    displayEmptyCart(cartMainElementNew);
+    localStorage.removeItem('cartBook');
     setTimeout(() => {
-      displayEmptyCart(cartMainElementNew);
       purchaseNotification.textContent = "";
-                        purchaseNotification.classList.remove("purchase-notification");
+      purchaseNotification.classList.remove("purchase-notification");
     }, 1000) 
   }
 }
