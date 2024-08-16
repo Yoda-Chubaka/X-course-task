@@ -98,6 +98,25 @@
     background-color: rgb(218, 3, 3);
     border: 1px solid rgb(218, 3, 3);
 }
+
+.purchase-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 150px;
+    height: 60px;
+    background-color: green;
+    font-weight: 400;
+
+}
+
+#full-cart-notification {
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    transform: translate(-20%, -16%);
+}
 }
 
 
@@ -202,6 +221,25 @@
     color: white;
     background-color: rgb(218, 3, 3);
     border: 1px solid rgb(218, 3, 3);
+}
+
+.purchase-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 270px;
+    height: 55px;
+    background-color: green;
+    font-weight: 400;
+
+}
+
+#full-cart-notification {
+    position: absolute;
+    top: 22%;
+    left: 18%;
+    transform: translate(-22%, -18%);
 }
 }
 
@@ -312,6 +350,25 @@
         background-color: rgb(218, 3, 3);
         border: 1px solid rgb(218, 3, 3);
     }
+
+        .purchase-notification {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            width: 450px;
+            height: 55px;
+            background-color: green;
+            font-weight: 400;
+    
+        }
+    
+        #full-cart-notification {
+            position: absolute;
+            top: 22%;
+            left: 34%;
+            transform: translate(-22%, -34%);
+        }
 }
 
 
@@ -424,12 +481,23 @@
     }
 
     .purchase-notification {
-        color: black;
-        width: 150px;
-        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 750px;
+        height: 50px;
         background-color: green;
+        font-weight: 600;
+        
     }
 
+        #full-cart-notification {
+            position: absolute;
+            top: 20%;
+            left: 33%;
+            transform: translate(-20%, -33%);
+    }
 }
 
 

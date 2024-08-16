@@ -92,8 +92,7 @@ function purchaseUI() {
   if (purchaseButton) {
     setTimeout(() => {
       displayEmptyCart(cartMainElementNew);
-    }, 2550)
-    
+    }, 2550) 
   }
 }
 
