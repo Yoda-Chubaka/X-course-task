@@ -1,21 +1,22 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   updateCartUI();
-  purchaseUI();
+  // purchaseUI();
 });
 
 function updateCartUI() {
   const cartBooks = JSON.parse(localStorage.getItem("cartBook") || "[]");
-  const cartMainElement = document.getElementById("container-cart");
+  // const cartMainElement = document.getElementById("container-cart");
+  const cartMainElementNew = document.getElementById("div-new");
   if (cartBooks.length === 0) {
-    displayEmptyCart(cartMainElement);
+    displayEmptyCart(cartMainElementNew);
   } else {
     const totalPriceValue = cartBooks.reduce(
       (total, book) => total + book.price * book.quantity,
       0
     );
     const booksHTML = cartBooks.map(book => generateBookHTML(book)).join("");
-    cartMainElement.innerHTML = generateCartHTML(booksHTML, totalPriceValue);
+    cartMainElementNew.innerHTML = generateCartHTML(booksHTML, totalPriceValue);
   }
 }
 
@@ -32,11 +33,6 @@ function generateBookHTML(book) {
 
 function generateCartHTML(generateBookHTML, totalPriceValue) {
   return `
-    <section class="section-vertical-align-full">
-      <div>
-        <div class="purshase-button-box">
-          <button id="active-purshase-button" class="active-purshase-button link-purshase">Purchase</button>
-        </div>
         <div class="box-full-cart">
           ${generateBookHTML}
         </div>
@@ -44,7 +40,7 @@ function generateCartHTML(generateBookHTML, totalPriceValue) {
           <p>Total price, $${totalPriceValue.toFixed(2)}</p>
         </div>
       </div>
-    </section>
+    
   `;
 }
 
@@ -58,8 +54,8 @@ document.addEventListener("click", function (event) {
   }
 });
 
-function displayEmptyCart(cartMainElement) {
-  cartMainElement.innerHTML = `
+function displayEmptyCart(cartMainElementNew) {
+  cartMainElementNew.innerHTML = `
         <section class="section-vertical-align">
             <div class="empty-box">
                 <div class="purshase-button-box">
@@ -76,15 +72,30 @@ function displayEmptyCart(cartMainElement) {
 
 
 // PURCHASE
-// const purchaseButton = document.getElementById("active-purshase-button");
-// const purchaseNotification = document.getElementById("full-cart-notification");
+const purchaseButton = document.getElementById("active-purshase-button");
+const purchaseNotification = document.getElementById("full-cart-notification");
 
-// purchaseButton.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   purchaseUI();
-// });
+purchaseButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  purchaseUI();
+});
 
-// function purchaseUI() {
-//   purchaseNotification.textContent = "Thank you!!";
-//   purchaseNotification.classList.add("purchase-notification");
-// }
+function purchaseUI() {
+  purchaseNotification.textContent = "Thank you!!";
+  purchaseNotification.classList.add("purchase-notification");
+  const cartMainElementNew = document.getElementById("div-new");
+  setTimeout(() => {
+    
+                        purchaseNotification.textContent = "";
+                        purchaseNotification.classList.remove("purchase-notification");
+  }, 2500);
+  if (purchaseButton) {
+    setTimeout(() => {
+      displayEmptyCart(cartMainElementNew);
+    }, 2550)
+    
+  }
+}
+
+
+
